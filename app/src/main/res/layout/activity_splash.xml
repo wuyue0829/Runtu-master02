@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_splash01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pic_kj">
+
+    <TextView
+        android:id="@+id/tv_versions_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_copyright_app_name"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/white_broder_bg"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:text="V "
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <com.mac.runtu.view.TextViewPlus
+        android:id="@+id/tv_copyright_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_copyright_own"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/copyright_app_name"
+        android:textColor="@color/white"
+        android:layout_marginBottom="5dp"
+        android:textSize="16sp"
+        android:padding="3dp"
+        app:customFont="SitkaZ.ttf"
+        android:visibility="gone"
+    />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_copyright_own"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="@string/copyright_own"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

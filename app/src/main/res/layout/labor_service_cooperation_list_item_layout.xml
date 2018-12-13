@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_white_yellow_selectop"
+                android:gravity="center_vertical"
+                android:padding="10dp">
+
+    <TextView
+        android:id="@+id/content_Tv"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_height="45dp"
+        android:lines="1"
+        android:maxLength="19"
+        android:textSize="16sp"
+        android:text="永乡冯家村10亩果园套餐，每天100元！每天100元"/>
+
+    <TextView
+        android:id="@+id/time_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:text="2016-08-25"/>
+</RelativeLayout>

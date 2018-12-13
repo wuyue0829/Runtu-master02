@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/menu_LL"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/contentbg"
+              android:orientation="vertical">
+       <include layout="@layout/serach_item_layout_menu"/>
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/order_seach_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/order_seach_icon"/>
+
+        <EditText
+            android:id="@+id/search_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/rural_tourism_search_hint"
+            android:textSize="14sp"/>
+    </LinearLayout>-->
+
+  <!--  <include layout="@layout/address_select_layout_4"/>-->
+    <include layout="@layout/address_select_layout_4_image"/>
+</LinearLayout>

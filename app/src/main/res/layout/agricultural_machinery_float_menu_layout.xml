@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/menu_LL"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/contentbg"
+              android:orientation="vertical">
+
+    <include layout="@layout/serach_item_layout_menu"/>
+
+    <include layout="@layout/address_select_layout_4_image"/>
+
+</LinearLayout>

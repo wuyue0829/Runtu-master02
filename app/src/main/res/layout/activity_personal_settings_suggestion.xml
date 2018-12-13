@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:slideswitch="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/contentbg"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#ff9900"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/back_Iv"
+            style="@style/BackImageStyle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/suggestions"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:layout_marginBottom="100dp">
+        <EditText
+            android:id="@+id/editText1"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="5"
+            android:padding="10dp"
+            android:maxLength="200"
+            android:hint="请输入你的意见(200字以内)"
+            android:gravity="start"/>
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/editText1"
+            android:background="#B7B7B7" />
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:background="@android:color/white"
+            android:padding="10dp">
+            <TextView
+                android:layout_gravity="left|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_qq"
+                />
+            <EditText
+                android:id="@+id/et_phone_qq"
+                android:layout_gravity="center|center_vertical"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:maxLength="16"
+                android:inputType="number"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_btnConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/submit_suggestion"
+            android:paddingTop="120dp"/>
+    </LinearLayout>
+</RelativeLayout>

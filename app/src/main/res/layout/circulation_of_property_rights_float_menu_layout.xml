@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/menu_LL"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/contentbg"
+              android:orientation="vertical">
+
+    <include layout="@layout/serach_item_layout_menu"/>
+
+    <!--<TextView android:layout_width="match_parent"
+              android:hint="@string/cpr_search_hint"
+
+              android:drawableLeft="@mipmap/order_seach_icon"
+              android:drawablePadding="10dp"
+              android:background="@drawable/order_seach_bg"
+              android:layout_height="wrap_content"/>-->
+
+    <include layout="@layout/address_select_layout_5_image"/>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/merchants_release"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_just_bottom_line_business_dynamics_select_bg"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:text="@string/latest_release"
+            android:textColor="@color/titlebg"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_just_bottom_line_business_dynamics_normal_bg"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

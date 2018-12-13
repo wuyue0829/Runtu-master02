@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/contentbg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_RL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff9900"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/back_Iv"
+            style="@style/BackImageStyle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/experience_farm"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/screen_LL"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/title_RL"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="5">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/comprehensive_ranking"
+            android:textColor="@color/order_price_text_color"/>
+        <View
+            style="@style/AddressSpaceLineStyle"/>
+        <TextView
+            android:id="@+id/tv_btnSales"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="销量"/>
+
+        <View
+            style="@style/AddressSpaceLineStyle"/>
+        <TextView
+            android:id="@+id/tv_btnPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="价格"/>
+
+        <View
+            style="@style/AddressSpaceLineStyle"/>
+        <TextView
+            android:id="@+id/tv_btnPopularity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="人气"/>
+
+        <View
+            style="@style/AddressSpaceLineStyle"/>
+        <TextView
+            android:id="@+id/tv_btnScreening"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableRight="@drawable/filter_icon"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="筛选"/>
+
+    </LinearLayout>
+
+    <!--<TextView android:layout_width="match_parent"
+              android:layout_height="6dp"
+              android:background="@color/gary_fenlei_bg"/>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="#ff9900"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="商品列表"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#B7B7B7" />
+
+    <!--<com.baoyz.widget.PullRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/screen_LL">
+
+        <com.mac.runtu.view.PullToRefreshListView
+            android:id="@+id/crp_Lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice"
+            android:descendantFocusability="afterDescendants"
+            android:divider="#cccccc"
+            android:dividerHeight="0.5dp"
+            android:fadingEdge="none"
+            android:scrollbars="none"
+            android:listSelector="@android:color/transparent"
+            android:scrollbarStyle="outsideOverlay"/>
+    </com.baoyz.widget.PullRefreshLayout>-->
+
+    <com.mac.runtu.view.PullToRefreshListView
+        android:id="@+id/crp_Lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:descendantFocusability="afterDescendants"
+        android:divider="#cccccc"
+        android:dividerHeight="0.5dp"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollbarStyle="outsideOverlay"/>
+</LinearLayout>

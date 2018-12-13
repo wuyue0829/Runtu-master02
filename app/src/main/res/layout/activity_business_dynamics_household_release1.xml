@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+              android:orientation="vertical"
+                android:background="#ffffff">
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff9900"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/back_Iv"
+            style="@style/BackImageStyle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/merchants_dynamic"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"/>
+
+
+
+    </RelativeLayout>
+   <ScrollView android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+
+       <LinearLayout android:layout_width="match_parent"
+                     android:orientation="vertical"
+                     android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/text1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/relativeLayout1"
+               android:background="@color/contentbg"
+               android:gravity="center_horizontal"
+               android:padding="10dp"
+               android:textSize="14dp"
+               android:text="@string/choice_release_class_type"/>
+           <LinearLayout
+               android:id="@+id/linearLayout1"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/text1"
+               android:background="#ffffff"
+               android:orientation="horizontal"
+               android:padding="10dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="left|center_vertical"
+                   android:layout_weight="1"
+                   android:background="@null"
+                   android:drawableLeft="@drawable/release_red_dot"
+                   android:drawablePadding="10dp"
+                   android:paddingLeft="20dp"
+                   android:textSize="14dp"
+                   android:text="@string/product_type"/>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:paddingRight="20dp">
+                   <Spinner
+                       android:id="@+id/sp_type1"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"/>
+
+               </LinearLayout>
+
+           </LinearLayout>
+           <View
+               android:id="@+id/line1"
+               style="@style/ReleaseSpaceLineStyle"
+               android:layout_below="@+id/linearLayout1"
+           />
+           <LinearLayout
+               android:id="@+id/linearLayout2"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/line1"
+               android:background="#ffffff"
+               android:orientation="vertical"
+               android:padding="10dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="left|center_vertical"
+                   android:layout_weight="1"
+                   android:background="@null"
+                   android:textSize="14dp"
+                   android:drawableLeft="@drawable/release_red_dot"
+                   android:drawablePadding="10dp"
+                   android:paddingLeft="20dp"
+                   android:text="@string/Agricultural_products_place"/>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="right"
+                   android:paddingLeft="20dp"
+                   android:paddingRight="20dp"
+                   android:paddingTop="5dp">
+
+                  <include layout="@layout/tv_iv_4_layout"/>
+
+               </LinearLayout>
+
+           </LinearLayout>
+           <View
+               android:id="@+id/line2"
+               style="@style/ReleaseSpaceLineStyle"
+               android:layout_below="@+id/linearLayout2"
+           />
+           <LinearLayout
+               android:id="@+id/linearLayout3"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/line2"
+               android:background="#ffffff"
+               android:orientation="horizontal"
+               android:padding="10dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="left|center_vertical"
+                   android:layout_weight="1"
+                   android:background="@null"
+                   android:drawableLeft="@drawable/release_red_dot"
+                   android:drawablePadding="10dp"
+                   android:paddingLeft="20dp"
+                   android:textSize="14dp"
+                   android:text="@string/title"/>
+               <EditText
+                   android:id="@+id/et_title"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@null"
+                   android:hint="@string/input_title"
+                   android:maxLength="14"
+                   android:inputType="text"
+                   android:paddingRight="20dp"
+                   android:textSize="15dp"/>
+
+           </LinearLayout>
+           <View
+               android:id="@+id/line3"
+               style="@style/ReleaseSpaceLineStyle"
+               android:layout_below="@+id/linearLayout3"/>
+           <LinearLayout
+               android:id="@+id/linearLayout4"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/line3"
+               android:background="#ffffff"
+               android:orientation="vertical"
+               android:padding="10dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="left|center_vertical"
+                   android:layout_weight="1"
+                   android:background="@null"
+                   android:textSize="14dp"
+                   android:drawableLeft="@drawable/release_red_dot"
+                   android:drawablePadding="10dp"
+                   android:paddingLeft="20dp"
+                   android:text="@string/detailed_description"/>
+               <EditText
+                   android:id="@+id/et_des"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@null"
+                   android:gravity="start"
+                   android:hint="@string/input_detailed_content"
+                   android:lines="3"
+                   android:paddingLeft="30dp"
+                   android:paddingRight="20dp"
+                   android:paddingTop="5dp"
+                   android:maxLength="60"
+                   android:textSize="15dp"/>
+
+           </LinearLayout>
+           <View
+               android:id="@+id/line4"
+               style="@style/ReleaseSpaceLineStyle"
+               android:layout_below="@+id/linearLayout4"
+           />
+           <LinearLayout
+               android:id="@+id/linearLayout5"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/line4"
+               android:background="#ffffff"
+               android:orientation="vertical"
+               android:padding="10dp">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingTop="10dp">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:paddingLeft="20dp"
+                       android:text="@string/add_photos"
+                       android:textSize="20dp"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:paddingLeft="10dp"
+                       android:text="@string/add_photos_describe"/>
+               </LinearLayout>
+               <ImageView
+                   android:id="@+id/iv_addImage"
+                   android:layout_width="85dp"
+                   android:layout_height="85dp"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="10dp"
+
+                   android:scaleType="centerCrop"
+                   android:src="@drawable/bg_image_select"
+               />
+
+           </LinearLayout>
+
+           <ImageView
+               android:id="@+id/next_Iv"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/linearLayout5"
+               android:paddingTop="20dp"
+               android:src="@drawable/release_next_step"/>
+       </LinearLayout>
+   </ScrollView>
+</LinearLayout>

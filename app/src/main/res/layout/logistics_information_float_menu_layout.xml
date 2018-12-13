@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/menu_LL"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/contentbg"
+              android:orientation="vertical">
+    <include layout="@layout/serach_item_layout_menu"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="3dp"
+    >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="始发地"
+            android:textColor="@color/no_departure_bg"/>
+        <View
+            style="@style/AddressSpaceLineStyle"/>
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/address_text_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="1"
+
+            android:textSize="@dimen/address_select_text"
+        />
+
+        <ImageView
+            android:id="@+id/iv_city"
+            style="@style/AddressArrowShapeStyle"
+        />
+        <View
+            style="@style/AddressSpaceLineStyle"/>
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/address_text_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="1"
+            android:textSize="@dimen/address_select_text"
+        />
+
+        <ImageView
+            android:id="@+id/iv_area"
+            style="@style/AddressArrowShapeStyle"
+        />
+        <View
+            style="@style/AddressSpaceLineStyle"/>
+        <TextView
+            android:id="@+id/tv_town"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/address_text_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="1"
+            android:textSize="@dimen/address_select_text"
+        />
+
+        <ImageView
+            android:id="@+id/iv_town"
+            style="@style/AddressArrowShapeStyle"
+        />
+        <View
+            style="@style/AddressSpaceLineStyle"/>
+        <TextView
+            android:id="@+id/tv_cartype"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/address_text_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="1"
+            android:textSize="@dimen/address_select_text"
+        />
+
+        <ImageView
+            android:id="@+id/iv_cartype"
+            style="@style/AddressArrowShapeStyle"
+        />
+
+
+    </LinearLayout>
+
+
+    <View
+        style="@style/AddressBottomLineStyle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="3dp"
+    >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="目的地"
+            android:textColor="@color/already_started_bg"/>
+
+        <View
+            style="@style/AddressSpaceLineStyle"/>
+
+
+        <TextView
+            android:id="@+id/tv_final_place_city"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/address_text_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="1"
+            android:textSize="@dimen/address_select_text"
+        />
+
+        <ImageView
+            android:id="@+id/iv_final_place_city"
+            style="@style/AddressArrowShapeStyle"
+        />
+
+        <View
+            style="@style/AddressSpaceLineStyle"/>
+        <TextView
+            android:id="@+id/tv_final_place_area"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/address_text_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="1"
+            android:textSize="@dimen/address_select_text"
+        />
+
+        <ImageView
+            android:id="@+id/iv_final_place_area"
+            style="@style/AddressArrowShapeStyle"
+        />
+        <View
+            style="@style/AddressSpaceLineStyle"/>
+        <TextView
+            android:id="@+id/tv_final_place_town"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/address_text_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="1"
+            android:textSize="@dimen/address_select_text"
+        />
+
+
+        <ImageView
+            android:id="@+id/iv_final_place_town"
+            style="@style/AddressArrowShapeStyle"
+        />
+        <View
+            style="@style/AddressSpaceLineStyle"/>
+         <ImageView
+           style="@style/AddressArrowShapeStyle"
+           android:visibility="invisible"
+       />
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="@dimen/address_text_height"
+                      android:layout_weight="1">
+            <ImageView
+                android:id="@+id/confirm_Iv"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/business_dynamiscs_submit"
+                android:textColor="@color/white"
+            />
+        </LinearLayout>
+
+
+       <!-- <ImageView
+            style="@style/AddressArrowShapeStyle"
+            android:visibility="invisible"
+        />-->
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#B7B7B7"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/merchants_release"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_just_bottom_line_business_dynamics_select_bg"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:text="@string/labor_service_titale"
+            android:textColor="@color/titlebg"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_just_bottom_line_business_dynamics_normal_bg"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

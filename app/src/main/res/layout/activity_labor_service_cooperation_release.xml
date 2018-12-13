@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/contentbg"
+              android:orientation="vertical"
+              tools:context=".activity.laborscrvice.LaborServiceCooperationReleaseActivity">
+
+    <RelativeLayout
+        android:id="@+id/title_RL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff9900"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/back_Iv"
+            style="@style/BackImageStyle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/labor_service_cooperation"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/title_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_RL"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/labor_service_cooperation_msg"
+        android:textSize="20sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_msg"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/table_LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:shrinkColumns="1,2,3"
+                android:stretchColumns="1,2,3">
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_column="0"
+                        android:drawableLeft="@drawable/release_red_dot"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/lsc_release_type"
+                        android:textSize="15sp"/>
+
+                    <Spinner
+
+                        android:id="@+id/sp_type1"
+                        android:layout_column="1"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_span="2"
+                        android:gravity="right"/>
+
+                    <Spinner
+                        android:id="@+id/sp_type2"
+                        android:layout_column="2"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_span="3"
+                        android:gravity="right"/>
+
+                </TableRow>
+
+                <View
+                    android:id="@+id/view_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#B7B7B7"/>
+
+                <TableRow
+                    android:id="@+id/tr_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <RelativeLayout
+                        android:layout_column="0"
+                        android:layout_span="4">
+
+                        <TextView
+                            android:id="@+id/type_Tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:drawableLeft="@drawable/release_red_dot"
+                            android:drawablePadding="5dp"
+                            android:text="@string/lsc_release_address"
+                            android:textSize="15sp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/type_Tv"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:weightSum="4">
+
+                            <include layout="@layout/tv_iv_4_layout"/>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#B7B7B7"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:drawableLeft="@drawable/release_red_dot"
+                        android:drawablePadding="5dp"
+                        android:text="@string/lsc_release_title"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_title"
+                        android:layout_column="1"
+                        android:layout_marginRight="10dp"
+                        android:layout_span="3"
+                        android:background="@null"
+                        android:ems="10"
+                        android:gravity="right|center_vertical"
+                        android:hint="@string/lsc_release_title_hint"
+                        android:inputType="text"
+                        android:maxLength="14"
+                        android:textSize="12sp"/>
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#B7B7B7"/>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <RelativeLayout
+                        android:layout_column="0"
+                        android:layout_span="4">
+
+                        <TextView
+                            android:id="@+id/lsc_release_title_Tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:drawableLeft="@drawable/release_red_dot"
+                            android:drawablePadding="5dp"
+                            android:text="@string/lsc_release_content"
+                            android:textSize="15sp"/>
+
+                        <EditText
+                            android:id="@+id/et_des"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lsc_release_title_Tv"
+                            android:layout_marginTop="5dp"
+                            android:background="@null"
+                            android:ems="10"
+                            android:gravity="top"
+                            android:hint="请输入内容"
+                            android:inputType="textMultiLine"
+                            android:minLines="3"
+                            android:maxLength="60"
+                            android:paddingLeft="15dp"
+                            android:textSize="12sp"/>
+                    </RelativeLayout>
+                </TableRow>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#B7B7B7"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_column="0"
+                        android:drawableLeft="@drawable/release_red_dot"
+                        android:drawablePadding="5dp"
+                        android:text="@string/lsc_release_time"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_column="3"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right|center_vertical"
+                        android:hint="选择日期"
+                    />
+
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#B7B7B7"/>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_column="0"
+                        android:drawableLeft="@drawable/release_red_dot"
+                        android:drawablePadding="5dp"
+                        android:text="干活时段"
+                        android:textSize="15sp"/>
+
+                    <Spinner
+                        android:id="@+id/sp_time"
+                        android:layout_column="3"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:layout_span="3"
+                        android:gravity="right"/>
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#B7B7B7"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_column="0"
+                        android:drawableLeft="@drawable/release_red_dot"
+                        android:drawablePadding="5dp"
+                        android:text="@string/lsc_release_person"
+                        android:textSize="15sp"/>
+
+                    <TextView
+
+                        android:id="@+id/et_name"
+                        android:layout_column="1"
+                        android:layout_marginRight="10dp"
+                        android:layout_span="3"
+                        android:background="@null"
+                        android:ems="10"
+                        android:gravity="right|center_vertical"
+                        android:hint="@string/lsc_release_person_hint"
+                        android:maxLength="10"
+                        android:textSize="12sp"/>
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#B7B7B7"/>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:layout_column="0"
+                        android:drawableLeft="@drawable/release_red_dot"
+                        android:drawablePadding="5dp"
+                        android:text="@string/lsc_release_phone"
+                        android:textSize="15sp"/>
+
+                    <TextView
+
+                        android:id="@+id/et_number"
+                        android:layout_column="1"
+                        android:layout_marginRight="10dp"
+                        android:layout_span="3"
+                        android:background="@null"
+                        android:ems="10"
+                        android:gravity="right|center_vertical"
+                        android:hint="@string/lsc_release_phone_hint"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:textSize="12sp"/>
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#B7B7B7"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:layout_column="0"
+                        android:drawableLeft="@drawable/release_red_dot"
+                        android:drawablePadding="5dp"
+                        android:text="@string/lsc_release_people_count"
+                        android:textSize="15sp"/>
+
+                    <EditText
+
+                        android:id="@+id/et_personCount"
+                        android:layout_column="1"
+                        android:layout_marginRight="10dp"
+                        android:layout_span="3"
+                        android:background="@null"
+                        android:ems="10"
+                        android:gravity="right|center_vertical"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_alignParentLeft="true"
+                        android:layout_column="0"
+                        android:drawablePadding="5dp"
+                        android:text="人"
+                        android:layout_marginRight="15dp"
+                        android:textSize="14sp"/>
+
+                </TableRow>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#B7B7B7"/>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:drawableLeft="@drawable/release_red_dot"
+                        android:drawablePadding="5dp"
+                        android:text="@string/lsc_release_vc"
+                        android:textSize="15sp"/>
+
+                    <EditText
+                        android:id="@+id/et_code"
+                        android:layout_column="1"
+                        android:background="@null"
+                        android:ems="10"
+                        android:gravity="right|center_vertical"
+                        android:hint="@string/lsc_release_vc_hint"
+                        android:inputType="number"
+                        android:maxLength="8"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_btnCode"
+                        android:layout_column="2"
+                        android:layout_marginRight="10dp"
+                        android:layout_span="2"
+                        android:gravity="center_vertical|right"
+                        android:text="@string/get_verification_code"
+                        android:textColor="@color/titlebg"
+                        android:textSize="15sp"/>
+
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#B7B7B7"/>
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/confirm_release_Iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/confirm_release"
+            />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ConvenientBanner">
+        <attr name="canLoop" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="ChannelView">
+        <attr name="textColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="rectColor" format="color"/>
+        <attr name="rectRound" format="integer"/>
+        <attr name="rectTextPaddingTop" format="integer"/>
+        <attr name="rectTextPaddingBottom" format="integer"/>
+        <attr name="rectTextPaddingLeft" format="integer"/>
+        <attr name="rectTextPaddingRight" format="integer"/>
+        <attr name="rectTextPadding" format="integer"/>
+    </declare-styleable>
+
+     <!--自定义字体-->
+    <declare-styleable name="TextViewPlus">
+        <attr name="customFont" format="string"/>
+    </declare-styleable>
+
+</resources>

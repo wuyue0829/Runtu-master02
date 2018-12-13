@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/btn_white_green_selector"
+              android:padding="12dp"
+              android:text="删除订单"
+              android:textSize="18sp"/>
+</LinearLayout>

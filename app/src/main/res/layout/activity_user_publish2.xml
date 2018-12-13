@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff9900"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/back_Iv"
+            style="@style/BackImageStyle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/publish"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <View style="@style/ReleaseSpaceLineStyle"/>
+
+    <LinearLayout android:id="@+id/ll_propertypublish"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/btn_grag_withe_selector"
+                  android:orientation="horizontal">
+        <TextView
+            style="@style/UserPublishStyle"
+            android:layout_weight="1"
+
+
+            android:text="产权发布"/>
+
+        <ImageView
+            style="@style/UserPublishImageStyle"/>
+
+    </LinearLayout>
+    <View style="@style/ReleaseSpaceLineStyle"/>
+
+    <LinearLayout android:id="@+id/ll_businesspublish"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+
+                  android:background="@drawable/btn_grag_withe_selector"
+                  android:orientation="horizontal"
+    >
+        <TextView
+            style="@style/UserPublishStyle"
+            android:layout_weight="1"
+            android:text="客商发布"/>
+
+        <ImageView
+            style="@style/UserPublishImageStyle"/>
+
+    </LinearLayout>
+
+    <View style="@style/ReleaseSpaceLineStyle"/>
+    <LinearLayout android:id="@+id/ll_farmerpublish"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+
+                  android:background="@drawable/btn_grag_withe_selector"
+                  android:orientation="horizontal"
+    >
+        <TextView
+            style="@style/UserPublishStyle"
+            android:layout_weight="1"
+            android:text="农户发布"/>
+
+        <ImageView
+            style="@style/UserPublishImageStyle"/>
+
+    </LinearLayout>
+    <View style="@style/ReleaseSpaceLineStyle"/>
+
+    <LinearLayout android:id="@+id/ll_servicepublish"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+
+                  android:background="@drawable/btn_grag_withe_selector"
+                  android:orientation="horizontal">
+        <TextView
+            style="@style/UserPublishStyle"
+            android:layout_weight="1"
+            android:text="劳务发布"/>
+
+        <ImageView
+            style="@style/UserPublishImageStyle"/>
+
+    </LinearLayout>
+    <View style="@style/ReleaseSpaceLineStyle"/>
+
+    <LinearLayout android:id="@+id/ll_machinerypublish"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+
+                  android:background="@drawable/btn_grag_withe_selector"
+                  android:orientation="horizontal">
+        <TextView
+            style="@style/UserPublishStyle"
+            android:layout_weight="1"
+            android:text="农机发布"/>
+
+        <ImageView
+            style="@style/UserPublishImageStyle"/>
+
+    </LinearLayout>
+
+    <View style="@style/ReleaseSpaceLineStyle"/>
+    <LinearLayout android:id="@+id/ll_tranypublish"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+
+                  android:background="@drawable/btn_grag_withe_selector"
+                  android:orientation="horizontal">
+        <TextView
+            style="@style/UserPublishStyle"
+            android:layout_weight="1"
+            android:text="物流发布"/>
+
+        <ImageView
+            style="@style/UserPublishImageStyle"/>
+
+    </LinearLayout>
+
+    <View style="@style/ReleaseSpaceLineStyle"/>
+    <LinearLayout android:id="@+id/ll_takegoodpublish"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+
+                  android:background="@drawable/btn_grag_withe_selector"
+                  android:orientation="horizontal">
+        <TextView
+            style="@style/UserPublishStyle"
+            android:layout_weight="1"
+            android:text="捎货发布"/>
+
+        <ImageView
+            style="@style/UserPublishImageStyle"/>
+
+    </LinearLayout>
+    <View style="@style/ReleaseSpaceLineStyle"/>
+
+</LinearLayout>

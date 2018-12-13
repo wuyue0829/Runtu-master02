@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.agricumach.AgricuMachineryListActivity">
+    <RelativeLayout
+        android:id="@+id/title_RL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff9900"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/back_Iv"
+            style="@style/BackImageStyle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/agricultural_machinery"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+    <include layout="@layout/serach_item_layout_enable_conten"/>
+
+    <include layout="@layout/top_one_bottem_yellow_line_layout"/>
+
+    <include layout="@layout/list_view_pull_refresh_layout"/>
+</LinearLayout>

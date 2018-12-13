@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_yellow_selectop"
+                android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@color/gary_image_bg"
+        android:padding="1dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_245"/>
+
+    <TextView
+        android:id="@+id/title_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:lines="2"
+
+        android:text="农家柿子饼白霜赛陕西富平柿子干霜降吊柿"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/address_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_Tv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:background="@drawable/business_dynamics_address_bg"
+        android:text="洛川"
+        android:textColor="@color/business_dynamics_address_color"
+        android:textSize="12sp"/>
+
+
+    <TextView
+        android:id="@+id/type_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_Tv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/address_Tv"
+        android:background="@drawable/business_dynamics_type_bg"
+        android:text="柿饼"
+        android:textColor="@color/business_dynamics_type_color"
+        android:textSize="12sp"/>
+
+
+    <Button
+        android:id="@+id/product_details_Bt"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@id/video_Bv"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title_Tv"
+        android:background="@drawable/shape_corner_order_amount"
+        android:src="@drawable/order_pay"
+        android:text="@string/product_details"
+        android:textColor="@android:color/white"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/price_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address_Tv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:drawablePadding="5dp"
+        android:text="￥39.90"/>
+
+    <TextView
+        android:id="@+id/price_unit_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/price_Tv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/price_Tv"
+        android:drawablePadding="5dp"
+        android:text="元"
+        android:textColor="@color/order_price_text_color"/>
+
+
+    <TextView
+        android:id="@+id/quantity_sold_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/price_Tv"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:text="3.2万人收货"/>
+
+</RelativeLayout>

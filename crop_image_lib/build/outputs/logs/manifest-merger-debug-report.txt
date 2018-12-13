@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/wuyue/Desktop/开发/Android/3.闰土/Runtu-master02/crop_image_lib/src/main/AndroidManifest.xml:1:1-51
+INJECTED from /Users/wuyue/Desktop/开发/Android/3.闰土/Runtu-master02/crop_image_lib/src/main/AndroidManifest.xml:1:1-51
+INJECTED from /Users/wuyue/Desktop/开发/Android/3.闰土/Runtu-master02/crop_image_lib/src/main/AndroidManifest.xml:1:1-51
+	package
+		ADDED from /Users/wuyue/Desktop/开发/Android/3.闰土/Runtu-master02/crop_image_lib/src/main/AndroidManifest.xml:1:11-48
+		INJECTED from /Users/wuyue/Desktop/开发/Android/3.闰土/Runtu-master02/crop_image_lib/src/main/AndroidManifest.xml
+		INJECTED from /Users/wuyue/Desktop/开发/Android/3.闰土/Runtu-master02/crop_image_lib/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/wuyue/Desktop/开发/Android/3.闰土/Runtu-master02/crop_image_lib/src/main/AndroidManifest.xml:1:1-51
+uses-sdk
+INJECTED from /Users/wuyue/Desktop/开发/Android/3.闰土/Runtu-master02/crop_image_lib/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/wuyue/Desktop/开发/Android/3.闰土/Runtu-master02/crop_image_lib/src/main/AndroidManifest.xml
+INJECTED from /Users/wuyue/Desktop/开发/Android/3.闰土/Runtu-master02/crop_image_lib/src/main/AndroidManifest.xml
+INJECTED from /Users/wuyue/Desktop/开发/Android/3.闰土/Runtu-master02/crop_image_lib/src/main/AndroidManifest.xml
+INJECTED from /Users/wuyue/Desktop/开发/Android/3.闰土/Runtu-master02/crop_image_lib/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/wuyue/Desktop/开发/Android/3.闰土/Runtu-master02/crop_image_lib/src/main/AndroidManifest.xml
+		ADDED from /Users/wuyue/Desktop/开发/Android/3.闰土/Runtu-master02/crop_image_lib/src/main/AndroidManifest.xml
+		INJECTED from /Users/wuyue/Desktop/开发/Android/3.闰土/Runtu-master02/crop_image_lib/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/wuyue/Desktop/开发/Android/3.闰土/Runtu-master02/crop_image_lib/src/main/AndroidManifest.xml
+		ADDED from /Users/wuyue/Desktop/开发/Android/3.闰土/Runtu-master02/crop_image_lib/src/main/AndroidManifest.xml
+		INJECTED from /Users/wuyue/Desktop/开发/Android/3.闰土/Runtu-master02/crop_image_lib/src/main/AndroidManifest.xml

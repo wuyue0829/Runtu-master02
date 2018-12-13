@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_LL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/contentbg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/labor_service_cooperation_area"
+            android:textColor="@color/order_price_text_color"/>
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/address_text_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="1"
+            android:textSize="@dimen/address_select_text"
+            />
+
+        <ImageView
+            android:id="@+id/iv_city"
+            style="@style/AddressArrowShapeStyle"
+            />
+        <View
+            style="@style/AddressSpaceLineStyle"/>
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/address_text_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="1"
+            android:textSize="@dimen/address_select_text"
+            />
+
+        <ImageView
+            android:id="@+id/iv_area"
+            style="@style/AddressArrowShapeStyle"
+            />
+        <View
+            style="@style/AddressSpaceLineStyle"/>
+        <TextView
+            android:id="@+id/tv_town"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/address_text_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="1"
+            android:textSize="@dimen/address_select_text"
+            />
+
+        <ImageView
+            android:id="@+id/iv_town"
+            style="@style/AddressArrowShapeStyle"
+            />
+        <View
+            style="@style/AddressSpaceLineStyle"/>
+        <TextView
+            android:id="@+id/tv_village"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/address_text_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="1"
+            android:textSize="@dimen/address_select_text"
+            />
+
+        <ImageView
+            android:id="@+id/iv_village"
+            style="@style/AddressArrowShapeStyle"
+            />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#B7B7B7"/>
+
+
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/labor_service_cooperation_type"
+                android:textColor="@color/order_price_text_color"/>
+
+            <TextView
+                android:id="@+id/tv_worktype"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/address_text_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lines="1"
+                android:textSize="@dimen/address_select_text"
+                />
+
+            <ImageView
+                android:id="@+id/iv_worktype"
+                style="@style/AddressArrowShapeStyle"
+                />
+            <View
+                style="@style/AddressSpaceLineStyle"/>
+            <TextView
+                android:id="@+id/tv_worktime"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/address_text_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lines="1"
+                android:textSize="@dimen/address_select_text"
+                />
+
+            <ImageView
+                android:id="@+id/iv_worktime"
+                style="@style/AddressArrowShapeStyle"
+                />
+            <View
+                style="@style/AddressSpaceLineStyle"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/address_text_height"
+                android:layout_weight="1"
+
+                />
+
+            <ImageView
+                android:visibility="invisible"
+                style="@style/AddressArrowShapeStyle"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/address_text_height"
+                android:layout_weight="1"
+                />
+
+            <ImageView
+                android:visibility="invisible"
+                style="@style/AddressArrowShapeStyle"
+                />
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/confirm_Iv"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="110dp"
+            android:src="@drawable/business_dynamiscs_submit"/>
+        />
+
+        <ImageView
+            android:id="@+id/map_mode_Iv"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/map_mode"/>
+
+    </FrameLayout>
+
+    <View
+        style="@style/AddressBottomLineStyle"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:weightSum="2">
+        
+        
+        <RelativeLayout
+            android:id="@+id/rl_shangren"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/merchants_release"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingLeft="20dp"
+                android:text="商人雇佣"
+                android:textColor="@color/titlebg"/>
+            
+            <View
+                android:id="@+id/view_shangren"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/titlebg"
+                android:layout_alignParentBottom="true">
+            </View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_zhaohuo"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/merchants_release1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingLeft="20dp"
+                android:text="工人找活"
+                android:textColor="@color/txt_small"/>
+
+            <View
+                android:id="@+id/view_zhaohuo"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/titlebg"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone">
+            </View>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

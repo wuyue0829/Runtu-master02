@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="280dp"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff9900"
+        android:drawablePadding="5dp"
+        android:padding="8dp"
+        android:text="请输入昵称"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:maxLength="8"
+        android:layout_margin="5dp"
+    >
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="#bbff9900"
+            android:layout_marginRight="5dp"
+            android:text="取消"
+        />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="#bbff9900"
+            android:text="确定"
+        />
+    </LinearLayout>
+
+</LinearLayout>

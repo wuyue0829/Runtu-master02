@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="titlebg">#ff9900</color>
+    <color name="contentbg">#f5f5f5</color>
+    <color name="order_state_text_color">#67bdfe</color>
+    <color name="order_price_text_color">#ce3a38</color>
+
+    <color name="transparent">#0000</color>
+    <color name="bg_tab_pressed">#6633b5e5</color><!-- 蓝色 -->
+    <color name="bg_tab_normal">#00000000</color>
+
+    <color name="tab_text_color_selected">#FF9966</color> <!-- 选中文字颜色 -->
+    <color name="tab_text_color_normal">#FF9966</color> <!-- 未选中文字颜色 -->
+
+    <color name="line_orange">#ffff9807</color>
+
+    <color name="txt_title">#ff333333</color>
+    <color name="txt_small">#ff7a7a7a</color>
+    <color name="txt_big">#ff717171</color>
+    <color name="item_divider">#ffd7d7d7</color>
+    <color name="detail_screen_bg">#adadad</color>
+    <color name="progress">#0294f0</color>
+    <color name="menu_bg_normal">#f0f1f3</color>
+    <color name="menu_bg_press">#cecece</color>
+    <color name="gary_bg">#11cecece</color>
+
+    <color name="gary_bg_02">#55cecece</color>
+    <color name="white_bg">#fff</color>
+    <color name="black">#000</color>
+    <color name="gary_text">#6e6e6e</color>
+    <color name="indictor_color">#FF0033</color>
+    <color name="tab_top_color">#CCCCCC</color>
+
+    <color name="business_dynamics_address_color">#bee5b9</color>
+    <color name="business_dynamics_type_color">#4ebcf0</color>
+    <color name="normal_color">#b0b0b0</color>
+    <color name="labor_service_pop_title_bg">#3399fe</color>
+    <color name="shopping_cart_choice_text">#ff7e57</color>
+    <color name="select_bottom_line_color">#B7B7B7</color>
+    <color name="property_exchange_bg_color">#33FFCC</color>
+
+
+    <color name="already_started_bg">#339933</color>
+    <color name="already_expired_bg">#cc3333</color>
+    <color name="no_departure_bg">#fd9900</color>
+    <color name="toase_bg_02">#99fd9900</color>
+    <color name="number_of_requests_bg">#999999</color>
+    <color name="logistics_information_via_bg">#999999</color>
+    <color name="white">#fff</color>
+    <color name="gary">#6e6e6e</color>
+    <color name="gary_fenlei_bg">#556e6e6e</color>
+    <color name="gary_image_bg">#aa6e6e6e</color>
+    <color name="gary_btn_bg">#556e6e6e</color>
+    <color name="red_btn_bg">#FF3366</color>
+    <!--相册选择-->
+    <color name="focus_color">#7f33b5e5</color>
+
+
+    <color name="specialty_bg">#34cc99</color>
+    <color name="gary_specialty_filter_bg">#116e6e6e</color>
+    <color name="gary_filter_line">#C0C0C0</color>
+    <color name="red">#f00</color>
+    <color name="red_btn">#ff5001</color>
+    <color name="green_btn">#22ad38</color>
+
+    <color name="black_weixinresult">#a000</color>
+
+
+    <color name="list_view_item_bg">#77fd9900</color>
+    <color name="home_bg">#F5F5F5</color>
+
+
+    <!--摄像机-->
+    <color name="subtitle_color">#ff494949</color>
+    <color name="color_white">#ffffffff</color>
+    <color name="color_shadow">#ff333333</color>
+    <color name="cache_color_hint">#00000000</color>
+    <color name="color_divider">#ffdddddd</color>
+    <color name="color_black">#ff000000</color>
+    <color name="color_ptz_blue">#ff0044aa</color>
+    <color name="color_line">#ff444444</color>
+    <color name="color_blue">#ff0000ff</color>
+    <color name="button_bg_no">#60ffffff</color>
+    <color name="btn_dialg_bg">#CCFFFF</color>
+    <color name="gary_line">#996e6e6e</color>
+
+    <color name="btn_login_bg">#3CCF95</color>
+    <color name="colort_text_red">#990033</color>
+    <color name="bg_search_gray">#F5F5F5</color>
+</resources>

@@ -1,0 +1,176 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="splashTheme" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+
+    <style name="BackImageStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:gravity">left</item>
+        <item name="android:src">@drawable/reg_back_icon</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <!--用户发布条目-->
+    <style name="UserPublishStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--用户发布条目间隔-->
+    <style name="UserPublishBgStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/white_bg</item>
+    </style>
+
+    <!--用户发布条尾部箭头-->
+    <style name="UserPublishImageStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:layout_gravity">center</item>
+        <item name="android:src">@drawable/personal_center_right</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="AdressInputTVStyle">
+        <item name="android:layout_width">53dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <!--指示器间隔线-->
+    <style name="TabSpaceStyle">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">#B7B7B7</item>
+    </style>
+
+    <style name="TabTopStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1.5dp</item>
+        <item name="android:background">@color/tab_top_color</item>
+    </style>
+
+    <!--地址选择底部的线  颜色-->
+    <style name="AddressBottomLineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/select_bottom_line_color</item>
+    </style>
+    <!--地址选择间隔线  颜色-->
+    <style name="AddressSpaceLineStyle">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@color/select_bottom_line_color</item>
+    </style>
+    <!--地址选择小箭头-->
+    <style name="AddressArrowShapeStyle">
+        <item name="android:layout_width">@dimen/address_image_arrow</item>
+        <item name="android:layout_height">@dimen/address_text_height</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:src">@drawable/down_arrow</item>
+    </style>
+    <!--地址选择文字显示-->
+    <!--发布页分割想-->
+    <style name="ReleaseSpaceLineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">#B7B7B7</item>
+    </style>
+
+    <!--筛选textview格式-->
+
+
+    <style name="TextViewGrayStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/type_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+    <!--特产电商筛选 线条-->
+    <style name="specialtyBottomLineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+
+        <item name="android:background">@color/gary_filter_line</item>
+
+    </style>
+
+    <!--<item name="android:clickable">true</item>  特产店上筛选条目-->
+    <style name="SpecialtyFilterTextVeiwStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/specialty_filter_text_height
+        </item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/btn_grag_withe_selector</item>
+        <item name="android:textColor">@color/text_black_red_selector</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <dimen name="specialty_filter_text_height">70dp</dimen>
+
+    <!--加减号-->
+
+    <style name="BtnCutAddStyle">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@color/no_departure_bg</item>
+
+    </style>
+
+    <!--视频播放用到-->
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/zoomin</item>
+        <item name="android:windowExitAnimation">@anim/zoomout</item>
+    </style>
+
+    <!-- 树量选择弹窗样式 -->
+    <style name="BuyNumSelectDialogStyle" parent="@android:style/Theme.Dialog">
+
+        <!-- 去掉标题栏 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 去掉背景 -->
+        <item name="android:windowBackground">@null</item>
+        <!-- 设置动画 -->
+        <item name="android:windowAnimationStyle">@style/BuyNumSelectAnimStyle
+        </item>
+
+    </style>
+
+    <!-- 体验农场购买数量选择弹窗动画 -->
+    <style name="BuyNumSelectAnimStyle">
+        <item name="android:windowEnterAnimation">@anim/input_method_enter
+        </item>
+        <item name="android:windowExitAnimation">@anim/input_method_exit</item>
+    </style>
+</resources>

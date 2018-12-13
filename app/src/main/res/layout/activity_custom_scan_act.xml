@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff9900"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/back_Iv"
+            style="@style/BackImageStyle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/scan_title"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+
+
+    </RelativeLayout>
+
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/dbv_custom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:zxing_framing_rect_height="200dp"
+        app:zxing_framing_rect_width="200dp"
+        android:layout_marginTop="50dp"
+        app:zxing_preview_scaling_strategy="fitXY"
+        app:zxing_scanner_layout="@layout/barcode_scanner"
+        app:zxing_use_texture_view="true"
+    >
+    </com.journeyapps.barcodescanner.DecoratedBarcodeView>
+
+    <Button android:id="@+id/btn_switch"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_btn_login_bg"
+            android:layout_gravity="right"
+            android:textColor="@color/white"
+            android:text="闪光灯"/>
+
+</FrameLayout>

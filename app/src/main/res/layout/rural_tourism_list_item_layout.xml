@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_yellow_selectop"
+                android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@color/gary_image_bg"
+        android:paddingBottom="@dimen/image_padding"
+        android:paddingLeft="@dimen/image_padding"
+        android:paddingRight="@dimen/image_padding"
+        android:paddingTop="@dimen/image_padding"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_54"/>
+
+    <TextView
+        android:id="@+id/title_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:singleLine="true"
+        android:text="红色旅游洛川会议纪念馆"
+
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/content_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_Tv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:lines="3"
+        android:text="红色教育基地，免票，停车费4元，路边景色不错，路过去看看还是挺好的"
+        android:textSize="12sp"/>
+
+
+    <TextView
+        android:id="@+id/tour_type_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_Tv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:drawableLeft="@drawable/target_icon"
+        android:gravity="center"
+
+        android:text="红色景点"/>
+
+
+    <TextView
+        android:id="@+id/localtion_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tour_type_tv"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@drawable/location_icon"
+        android:drawablePadding="3dp"
+        android:maxLength="12"
+        android:text="延安/洛川/永乡"
+        android:textSize="12sp"/>
+
+</RelativeLayout>

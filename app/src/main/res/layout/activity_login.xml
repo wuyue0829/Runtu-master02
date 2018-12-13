@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_bg"
+        android:padding="15dp">
+
+
+        <EditText
+            android:id="@+id/username_Et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="160dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/login_picture_icon"
+            android:drawablePadding="15dp"
+            android:hint="@string/login_username_hint"
+            android:inputType="number"
+            android:maxLength="11"
+            android:padding="5dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="18sp"/>
+
+
+        <View
+            android:id="@+id/username_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/username_Et"
+            android:background="@android:color/white"/>
+
+
+        <EditText
+            android:id="@+id/password_Et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username_line"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/login_lock_icon"
+            android:drawablePadding="17dp"
+            android:hint="@string/login_password_hint"
+            android:inputType="textPassword"
+            android:maxLength="15"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="18sp"/>
+
+
+        <View
+            android:id="@+id/password_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/password_Et"
+            android:background="@android:color/white"/>
+
+
+        <TextView
+            android:id="@+id/forgot_pwd_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/password_line"
+            android:layout_marginTop="20dp"
+            android:checked="false"
+            android:text="@string/forget_password"
+            android:textColor="@color/colort_text_red"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/login_Iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forgot_pwd_Tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_btn_login_bg"
+            android:text="登       录"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/reg_Iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_Iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/shape_btn_register_bg"
+            android:text="立即注册"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_loading"
+
+    />
+</FrameLayout>

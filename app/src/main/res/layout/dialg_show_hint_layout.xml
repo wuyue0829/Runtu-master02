@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff9900"
+        android:drawablePadding="5dp"
+        android:padding="8dp"
+        android:text="添加图片: "
+        android:textSize="18sp"/>
+
+    <com.mac.runtu.view.TextViewPlus
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="为了您的发布更美观 ,\n 请选择横屏拍照的图片"
+        android:textSize="16sp"
+
+    />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp">
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="#bbff9900"
+            android:text="知 道 了 !"
+        />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/home_bg"
+
+              android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_title_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff9900"
+        android:drawablePadding="5dp"
+        android:padding="8dp"
+        android:text="添加购物车成功: "
+        android:textSize="18sp"/>
+
+    <LinearLayout android:id="@+id/ll_ks"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_ks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="客商"
+            android:textSize="18sp"
+        />
+
+        <RadioButton
+            android:id="@+id/rb_ks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+    <View style="@style/AddressBottomLineStyle"/>
+
+    <LinearLayout android:id="@+id/ll_nh"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_nh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="农户"
+            android:textSize="18sp"
+        />
+
+        <RadioButton
+            android:id="@+id/rb_nh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+    <View style="@style/AddressBottomLineStyle"/>
+    <LinearLayout android:id="@+id/ll_ptyh"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_ptyh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="普通用户"
+            android:textSize="18sp"
+        />
+
+        <RadioButton
+            android:id="@+id/rb_ptyh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginRight="10dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#bbff9900"
+            android:text="取消"
+        />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="#bbff9900"
+            android:text="确定"
+        />
+    </LinearLayout>
+
+</LinearLayout>

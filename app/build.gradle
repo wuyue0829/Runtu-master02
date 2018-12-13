@@ -1,0 +1,116 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        applicationId "com.mac.runtu"
+        minSdkVersion 15
+        targetSdkVersion 17   //为了兼容 视频的so文件降版本调低了
+        versionCode 16
+        versionName "2.7"
+        multiDexEnabled true//64k
+
+    }
+         //具体原因不清楚  部分原因是v4包冲突 app:transformClassesWithDexForDebug
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false//去掉不用资源
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+}
+
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+}
+
+
+
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url 'https://dl.bintray.com/leaking/maven'
+        }
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:24.2.1'
+    implementation 'com.youth.banner:banner:1.4.9'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.leaking.slideswitch:slideswitch:1.0.0'
+    implementation 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    implementation 'in.srain.cube:ultra-ptr:1.0.11'
+    implementation 'com.zhy:base-adapter:3.0.3'
+    implementation 'com.zhy:base-rvadapter:3.0.3'
+    implementation 'com.zhy:okhttputils:2.6.2'
+    implementation project(':crop_image_lib')
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.baoyz.pullrefreshlayout:library:1.2.0'
+    implementation 'com.google.android.gms:play-services-appindexing:8.1.0'
+    implementation project(':slidingmenulibrary')
+    implementation files('libs/alipaySdk-20161009.jar')
+    implementation files('libs/gson-2.3.1.jar')
+    implementation files('libs/libammsdk.jar')
+    implementation files('libs/voice.jar')
+    implementation 'com.tencent.bugly:crashreport:latest.release'
+    implementation 'de.greenrobot:greendao:2.1.0'
+    implementation 'de.greenrobot:greendao-generator:2.1.0'
+    implementation files('libs/baidumapapi_base_v4_1_1.jar')
+    implementation files('libs/baidumapapi_cloud_v4_1_1.jar')
+    implementation files('libs/baidumapapi_map_v4_1_1.jar')
+    implementation files('libs/baidumapapi_radar_v4_1_1.jar')
+    implementation files('libs/baidumapapi_search_v4_1_1.jar')
+    implementation files('libs/baidumapapi_util_v4_1_1.jar')
+    implementation files('libs/MobCommons-2016.1107.1809.jar')
+    implementation files('libs/MobTools-2016.1107.1809.jar')
+    implementation files('libs/ShareSDK-Core-2.7.10.jar')
+    implementation files('libs/ShareSDK-QQ-2.7.10.jar')
+    implementation files('libs/ShareSDK-Wechat-2.7.10.jar')
+    implementation files('libs/ShareSDK-Wechat-Core-2.7.10.jar')
+    implementation files('libs/ShareSDK-Wechat-Moments-2.7.10.jar')
+    implementation files('libs/ShareSDK-QZone-2.7.10.jar')
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'pub.devrel:easypermissions:0.2.0'
+    implementation 'com.journeyapps:zxing-android-embedded:3.3.0'
+    implementation 'com.github.skydoves:colorpickerview:1.0.8'
+    implementation 'com.android.support:multidex:1.0.0'
+    //解决方法数64k
+    implementation files('libs/jcore-android_v1.1.0.jar')
+    implementation files('libs/jpush-android_v3.0.1.jar')
+    implementation files('src/main/jniLibs/jsoup-1.11.3.jar')
+    implementation files('libs/locSDK_6.13.jar')
+    implementation files('src/main/jniLibs/hf_sdk_light_pro1.0.0.jar')
+    implementation files('src/main/jniLibs/hf_socket_pro_sdk_1.0.0.jar')
+}

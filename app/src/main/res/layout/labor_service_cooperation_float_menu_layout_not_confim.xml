@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/menu_LL"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/contentbg"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+    >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/labor_service_cooperation_area"
+            android:textColor="@color/order_price_text_color"/>
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/address_text_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="1"
+            android:textSize="@dimen/address_select_text"
+        />
+
+        <ImageView
+            android:id="@+id/iv_city"
+            style="@style/AddressArrowShapeStyle"
+        />
+        <View
+            style="@style/AddressSpaceLineStyle"/>
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/address_text_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="1"
+            android:textSize="@dimen/address_select_text"
+        />
+
+        <ImageView
+            android:id="@+id/iv_area"
+            style="@style/AddressArrowShapeStyle"
+        />
+        <View
+            style="@style/AddressSpaceLineStyle"/>
+        <TextView
+            android:id="@+id/tv_town"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/address_text_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="1"
+            android:textSize="@dimen/address_select_text"
+        />
+
+        <ImageView
+            android:id="@+id/iv_town"
+            style="@style/AddressArrowShapeStyle"
+        />
+        <View
+            style="@style/AddressSpaceLineStyle"/>
+        <TextView
+            android:id="@+id/tv_village"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/address_text_height"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:lines="1"
+            android:textSize="@dimen/address_select_text"
+        />
+
+        <ImageView
+            android:id="@+id/iv_village"
+            style="@style/AddressArrowShapeStyle"
+        />
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#B7B7B7"/>
+
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp"
+        >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/labor_service_cooperation_type"
+                android:textColor="@color/order_price_text_color"/>
+
+            <TextView
+                android:id="@+id/tv_worktype"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/address_text_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lines="1"
+                android:textSize="@dimen/address_select_text"
+            />
+
+            <ImageView
+                android:id="@+id/iv_worktype"
+                style="@style/AddressArrowShapeStyle"
+            />
+            <View
+                style="@style/AddressSpaceLineStyle"/>
+            <TextView
+                android:id="@+id/tv_worktime"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/address_text_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lines="1"
+                android:textSize="@dimen/address_select_text"
+            />
+
+
+            <ImageView
+                android:id="@+id/iv_worktime"
+                style="@style/AddressArrowShapeStyle"
+            />
+            <View
+                style="@style/AddressSpaceLineStyle"/>
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="@dimen/address_text_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lines="1"
+                android:textSize="@dimen/address_select_text"
+            />
+
+            <ImageView
+                style="@style/AddressArrowShapeStyle"
+                android:visibility="invisible"
+            />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="@dimen/address_text_height"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:lines="1"
+                android:textSize="@dimen/address_select_text"
+            />
+
+            <ImageView
+                style="@style/AddressArrowShapeStyle"
+                android:visibility="invisible"
+            />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/map_mode_Iv"
+            android:layout_width="90dp"
+            android:layout_height="25dp"
+            android:background="@color/labor_service_pop_title_bg"
+            android:text="确定选择"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="40dp"
+            android:textColor="#fff"
+        />
+
+
+    </FrameLayout>
+
+
+
+
+    <View
+        style="@style/AddressBottomLineStyle"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/merchants_release"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_just_bottom_line_business_dynamics_select_bg"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:text="@string/tv_top_lable"
+            android:textColor="@color/titlebg"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_just_bottom_line_business_dynamics_normal_bg"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

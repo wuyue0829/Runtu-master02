@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_yellow_selectop"
+                android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@color/gary_image_bg"
+        android:padding="1dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_51_1"/>
+
+    <TextView
+        android:id="@+id/title_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:lines="2"
+        android:text="洛川农机社售600型号拖拉机两台"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        android:id="@+id/price_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_Tv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:gravity="center"
+        android:text="￥5"
+        android:textColor="@color/titlebg"/>
+
+    <TextView
+        android:id="@+id/price_unit_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/price_Tv"
+        android:layout_below="@id/address_Tv"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/price_Tv"
+        android:text="元"
+        android:textSize="12sp"/>
+
+
+    <TextView
+        android:id="@+id/type_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/price_Tv"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@drawable/type_icon"
+        android:drawablePadding="5dp"
+        android:text="农机"/>
+
+    <TextView
+        android:id="@+id/creattime_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price_Tv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:drawableLeft="@drawable/time_icon"
+        android:drawablePadding="3dp"
+        android:gravity="center"
+        android:text="2016-09-12"
+    />
+
+    <TextView
+        android:id="@+id/localtion_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/creattime_Tv"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@drawable/location_icon"
+        android:drawablePadding="3dp"
+        android:text="陕西/西安/户县"
+        android:textSize="12sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_yellow_selectop"
+                android:descendantFocusability="blocksDescendants"
+                android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_28"/>
+
+    <TextView
+        android:id="@+id/title_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:singleLine="true"
+        android:text="延安 洛川 大山里土鸡"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/address_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_Tv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:background="@drawable/business_dynamics_address_bg"
+        android:text="洛川"
+        android:textColor="@color/business_dynamics_address_color"
+        android:textSize="12sp"/>
+
+
+    <TextView
+        android:id="@+id/type_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_Tv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/address_Tv"
+        android:background="@drawable/business_dynamics_type_bg"
+        android:text="土鸡"
+        android:textColor="@color/business_dynamics_type_color"
+        android:textSize="12sp"/>
+
+
+    <Button
+        android:id="@+id/video_Bv"
+        android:layout_width="65dp"
+        android:layout_height="22dp"
+        android:textSize="12sp"
+        android:layout_below="@id/address_Tv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:background="@drawable/shape_corner_order_amount"
+        android:text="@string/shopping_cart_online_video"
+        android:focusable="false"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/btn_address"
+        android:layout_width="65dp"
+        android:layout_height="22dp"
+        android:textSize="12sp"
+        android:layout_below="@id/address_Tv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/video_Bv"
+        android:background="@drawable/shape_corner_order_location"
+        android:text="地图定位"
+        android:focusable="false"
+        android:textColor="@android:color/white"/>
+
+
+    <!--<Button
+        android:id="@+id/confirm_receipt_Bt"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@id/video_Bv"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/shape_corner_order_amount"
+        android:src="@drawable/order_pay"
+        android:text="@string/shopping_cart_confirm_receipt"
+        android:textColor="@android:color/white" />-->
+
+    <TextView
+        android:id="@+id/passengers_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/video_Bv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:drawableLeft="@drawable/adopt_icon"
+        android:drawablePadding="5dp"
+        android:text="已有102人领养"/>
+
+    <TextView
+        android:id="@+id/localtion_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/video_Bv"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/location_icon"
+        android:drawablePadding="5dp"
+        android:visibility="gone"
+        android:text="陕西/延安/洛川"/>
+
+</RelativeLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/contentbg">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff9900"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/back_Iv"
+            style="@style/BackImageStyle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/add_new_address"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/table_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:shrinkColumns="1,2,3"
+        android:stretchColumns="1,2,3">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_column="0"
+                android:gravity="center_vertical"
+                android:text="@string/consignee"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/consignee_Et"
+                android:layout_column="1"
+                android:layout_span="3"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:maxLength="8"/>
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#B7B7B7"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_column="0"
+                android:gravity="center_vertical"
+                android:text="@string/add_receipt_phone_number"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/receipt_phone_number_Et"
+                android:layout_column="1"
+                android:layout_span="3"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:maxLength="11"/>
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#B7B7B7"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_column="0"
+                android:gravity="center_vertical"
+                android:text="@string/add_receipt_guding_number"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/et_guding_number"
+                android:layout_column="1"
+                android:layout_span="3"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:maxLength="11"/>
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#B7B7B7"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:layout_column="0"
+                android:text="@string/local_area"
+                android:textSize="15dp"/>
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:gravity="right"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <!--<Spinner
+                    android:id="@+id/sp_prov"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <Spinner
+                    android:id="@+id/sp_city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+                <Spinner
+                    android:id="@+id/sp_country"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>-->
+
+                <TextView
+                    android:id="@+id/tv_province"
+                    style="@style/AdressInputTVStyle"
+                    android:layout_width="58dp"
+                    android:text="陕西省"
+                />
+
+                <ImageView
+                    android:id="@+id/iv_province"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/down_arrow"
+                />
+
+                <TextView
+                    android:id="@+id/tv_city"
+                    style="@style/AdressInputTVStyle"
+                    android:layout_width="58dp"
+                    android:text="延安市"
+                />
+
+                <ImageView
+                    android:id="@+id/iv_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/down_arrow"
+                />
+
+                <TextView
+                    android:id="@+id/tv_area"
+                    style="@style/AdressInputTVStyle"
+                    android:layout_width="58dp"
+                    android:text="洛川县"
+                />
+
+                <ImageView
+                    android:id="@+id/iv_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/down_arrow"
+                />
+
+
+            </LinearLayout>
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#B7B7B7"/>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/detailed_address_Et"
+                android:layout_column="0"
+                android:layout_span="3"
+                android:background="@null"
+                android:ems="10"
+                android:hint="@string/detailed_address_hint"
+                android:inputType="textMultiLine"/>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/add_address_Bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/table_LL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_corner_order_amount"
+        android:text="确认提交"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"/>
+
+</RelativeLayout>

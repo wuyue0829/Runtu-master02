@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_yellow_selectop"
+                android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@color/gary_image_bg"
+        android:padding="1dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_51"/>
+
+    <TextView
+        android:id="@+id/title_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:singleLine="true"
+        android:lines="1"
+        android:text="陕西青年农场主培训班11日开班 招募百名青年参训"
+        android:textColor="@color/order_price_text_color"/>
+
+    <TextView
+        android:id="@+id/content_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_Tv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:lines="3"
+        android:layout_toRightOf="@+id/imageView"
+        android:text="根据《陕西省“现代青年农场主计划”实施方案》的通知需求，结合..."
+        android:textSize="12sp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_toLeftOf="@+id/time_Tv"
+        android:drawablePadding="3dp"
+        android:text="@string/entrepreneurship_training_msg_release_time"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/time_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:text="2016-09-12"
+        android:textSize="12sp"/>
+
+</RelativeLayout>

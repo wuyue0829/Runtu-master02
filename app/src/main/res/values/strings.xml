@@ -1,0 +1,875 @@
+<resources>
+
+    <string name="app_name">闰土农业</string>
+    <!-- 登录注册 -->
+    <string name="login_username_hint">请输入账号</string>
+    <string name="login_password_hint">请输入密码</string>
+    <string name="login_protocol">我同意《閏土电商协议》并遵守规则</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="regist">注册</string>
+    <string name="regist_phone_num_hint">11位手机号码</string>
+    <string name="regist_phone_vc_hint">手机验证码</string>
+    <string name="pwd_hint">6-15位密码</string>
+    <string name="confirm_pwd_hint">请再次输入密码</string>
+    <string name="my_password">密码设置</string>
+    <string name="personal_center">个人中心</string>
+
+    <string name="business_dynamics">客商动态</string>
+    <string name="circulation_of_property_rights">产权流转</string>
+    <string name="rural_tourism">乡村旅游</string>
+    <string name="logistics_distribution">物流直配</string>
+    <string name="entrepreneurship_training">扶贫培训</string>
+    <string name="online_market">农资农机在线市场</string>
+
+    <!-- 主页 -->
+    <string name="quality_resources">优质资源</string>
+    <string name="credit_transaction">诚信交易</string>
+    <string name="security_deposit">押金保障</string>
+    <string name="authentication">实名认证</string>
+
+    <!-- 个人中心 -->
+    <string name="manage_site">管理收获地点</string>
+    <string name="order_details">订单详情</string>
+    <string name="personal_data">个人资料</string>
+    <string name="user_data">个人资料</string>
+    <string name="my_release">我的发布</string>
+    <string name="my_adoption">我的领养</string>
+    <string name="setting">设置</string>
+    <string name="contact_customer_service">联系客服</string>
+
+    <!--订单-->
+    <string name="show_all_order">查看所有订单</string>
+    <string name="order_state">状态：</string>
+    <string name="order_totle_price">总价：</string>
+    <string name="order_seach_hint">商品名称/商品编号/订单号</string>
+    <string name="all_orders">全部订单</string>
+    <string name="pending_payment_order">待付款</string>
+    <string name="receipt_of_goods_order">待收货</string>
+    <string name="completed_order">已完成</string>
+    <string name="confirm_the_payment">确认付款</string>
+    <string name="change">更改</string>
+    <string name="amount">购买数量</string>
+    <string name="total_commodity_price">商品价格合计：</string>
+    <string name="distribution_mode">配送方式：</string>
+    <string name="postage">邮费：</string>
+    <string name="total_price">价格合计：</string>
+
+    <!-- 收货地址 -->
+    <string name="manage_receipt_address">管理收货地址</string>
+    <string name="set_as_default_address">设为默认地址</string>
+    <string name="delete">删除</string>
+    <string name="add_new_address">添加新地址</string>
+    <string name="add_receipt_phone_number">联系电话：</string>
+    <string name="consignee">收货人：</string>
+    <string name="local_area">所在地区：</string>
+    <string name="detailed_address_hint">请填写详细地址</string>
+
+    <string name="cancel">取消</string>
+    <string name="get_permission_msg">应用程序需要下列权限才能正确运行。请授权。</string>
+    <string name="get_permission_fail_msg">未能获得权限，应用程序将退出</string>
+    <string name="denied_permission_msg">
+        如果应用程序没有访问相关权限，此应用程序可能无法正常工作。打开应用程序设置来修改应用程序权限。
+    </string>
+    <string name="version_description">版本说明</string>
+    <string name="help">帮助</string>
+    <string name="other_user_login">其他用户登录</string>
+    <string name="suggestions">意见反馈</string>
+    <string name="message_notification">消息通知</string>
+    <string name="about_us">关于我们</string>
+    <string name="phone_qq">手机或QQ:</string>
+    <string name="logo_down_font">闰土，给您天然的味道！</string>
+    <string name="tow_code_down_font">让您的朋友扫描二维码，就可以下载闰土客户端！</string>
+    <string name="special_declaration">特别声明</string>
+    <string name="latest_version">最新版本</string>
+    <string name="version_number">V1.0.0</string>
+    <string name="statement_content">闰土再次声明，您通过本软件参加的商业活动，与Applelnc.无关</string>
+    <string name="aboutus_content">
+        \t\t闰土电商是响应国家互联网+政策号召打造的互联网农业综合平台，目标是打通“城市-农村”信息化对接通道，解决农产品供求不畅的矛盾，构建以信息化平台为核心的农产品信息发布和交易服务体系。农卖网实行全免费的运营模式，具有信息发布及时、针对性强、覆盖面广的特色，可以实现网上供求信息的智能匹配和在线交易服务，其农业招商信息及时发布和简易上手的搜索功能可帮助供求双方快速捕获商机。
+    </string>
+    <string name="help_question1">如何申请退款？\n
+亲，如果您在与卖家交易过程中，遇到问题需要退款，可以根据订单状态按以下方式操作呢：\n
+1. 若订单显示为【待付款】\n
+   您只是拍下了商品，还没有成功进行【付款】操作呢，您可以与卖家协商后自己【取消订单】或让卖家关闭交易，或者等系统超时自动关闭交易。\n
+2. 若订单显示为【已付款】\n
+您可以与卖家协商后登录【闰土农业】-【个人中心】-【订单详情】页面找到该笔订单，点击【退款/退货】-【仅退款】。若联系不上卖家或卖家一直未处理退款，在买家申请退款的48小时后，系统会自动退款给您。\n
+3. 若订单显示为【已发货】\n
+   如果您和卖家已经协商需部分/全部退款，您可以登录【闰土农业】-【个人中心】-【订单详情】页面找到该笔订单，点击【退款/退货】，选择服务类型和退款原因。\n
+4. 若订单显示为【交易完成】\n
+   您可以在交易确认收货的15天以内，登录【闰土农业】-【个人中心】-【订单详情】页面找到该笔订单，点击【申请售后】。\n
+5. 若订单显示为【交易关闭】\n
+   此交易状态表示交易已经结束，是无法申请退款的呢（交易关闭可能是由于您拍下了商品但未付款，后续由卖家或者系统关闭了交易；或是您已经申请退款成功，钱款已经退回，交易关闭）\n\n
+
+*温馨提醒：\n
+1）如您已经过了维权处理期无法发起退款申请，建议您联系卖家协商处理哦。\n2）如果您确实操作过付款，但交易订单状态一直未改变，请确认您支付所用的银行卡是否已经扣款，或相关款项是否充值到对应的支付宝账户中，如关于钱款仍有问题请直接联系支付宝客服咨询。\n</string>
+    <string name="help_question1_case_as_follows">信用减少的原因如下：</string>
+    <string name="help_question1_case1">被用户举报违规信息并被确认属实</string>
+    <string name="help_question1_case1_result">-1</string>
+    <string name="help_question1_case2">信息判为中介</string>
+    <string name="help_question1_case2_result">-3</string>
+    <string name="help_question1_case3">锁定账户</string>
+    <string name="help_question1_case3_result">信用减半</string>
+    <string name="help_question2">问：如何增加信用？</string>
+    <string name="help_question2_case_as_follows">信用可以通过以下方式增加：</string>
+    <string name="help_question2_case1">邮箱验证</string>
+    <string name="help_question2_case1_result">+50</string>
+    <string name="help_question2_case2">从业资格证书验证</string>
+    <string name="help_question2_case2_result">+100</string>
+    <string name="help_question2_case3">企业验证</string>
+    <string name="help_question2_case3_result">+210</string>
+    <string name="help_question2_case4">生活服务网邻通用户第一年赠送</string>
+    <string name="help_question2_case4_result">+150</string>
+    <string name="help_question2_case5">生活服务网邻通用户第二年赠送</string>
+    <string name="help_question2_case5_result">+200</string>
+    <string name="help_question2_case6">生活服务网邻通用户第三年赠送</string>
+    <string name="help_question2_case6_result">+200</string>
+    <string name="help_question2_case7">手机验证</string>
+    <string name="help_question2_case7_result">+100</string>
+    <string name="help_question2_case8">身份验证</string>
+    <string name="help_question2_case8_result">+150</string>
+    <string name="help_question2_case9">置顶在线时间满100小时（可累计）</string>
+    <string name="help_question2_case9_result">+5</string>
+    <string name="publish">我的发布</string>
+
+    <string name="head_portrait">头像</string>
+    <string name="nickname">昵称</string>
+    <string name="real_name">真实姓名</string>
+    <string name="sex">性别</string>
+    <string name="identity">身份</string>
+    <string name="date_of_birth">出生日期</string>
+    <string name="address_information">地址信息</string>
+    <string name="registered_mobile_phone">注册手机</string>
+    <string name="password_modification">密码修改</string>
+
+    <string name="nickname_data">洛川果哥</string>
+    <string name="real_name_data">吴江</string>
+    <string name="sex_data_male">男</string>
+    <string name="sex_data_female">女</string>
+    <string name="identity_data">果农</string>
+    <string name="date_of_birth_data">1975-05-23</string>
+    <string name="address_information_province">省</string>
+    <string name="address_information_city">市</string>
+    <string name="address_information_district_and_county">区县</string>
+    <string name="address_information_Town">镇</string>
+    <string name="registered_mobile_phone_data">15686036075</string>
+
+    <string name="write_personal_nickname">个人昵称：</string>
+    <string name="write_real_name">真实姓名:</string>
+    <string name="write_sex">性别：</string>
+    <string name="write_identity">身份选择：</string>
+    <string name="write_date_of_birth">出生日期:</string>
+    <string name="write_email">邮箱：</string>
+    <string name="write_address_information">地址信息：</string>
+    <string name="write_head_portrait">个人头像：</string>
+
+    <string name="want_release">我要发布</string>
+    <string name="choice_release_content">选择要发布的产权内容</string>
+    <string name="property_type">产权类型</string>
+    <string name="property_position">产权位置</string>
+    <string name="transfer_mode">流转方式</string>
+    <string name="measure_area">面积</string>
+    <string name="transfer_term">流转年限</string>
+    <string name="price">价格</string>
+    <string name="release_time">发布时间</string>
+
+    <string name="please_input">请输入</string>
+    <string name="mu">亩</string>
+    <string name="year">年</string>
+    <string name="million_yuan">元</string>
+
+    <string name="input_release_property_details">请输入发布的产权详情</string>
+    <string name="title">标题</string>
+    <string name="detailed_description">详细说明</string>
+    <string name="release_person">发布人</string>
+    <string name="contact_information">联系方式</string>
+    <string name="verification_code">验证码</string>
+    <string name="add_photos">添加照片</string>
+
+    <string name="input_name">请输入姓名</string>
+    <string name="input_mobile_phone_number">请输入手机号</string>
+    <string name="input_title">请输入标题</string>
+    <string name="input_verification_code">请输入验证码</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="input_detailed_description">请输入详细说明</string>
+    <string name="add_photos_describe">有照片的电话量会提高50%</string>
+
+    <string name="property_details">产权详情</string>
+    <string name="property_details_title">西安户县46亩果园，10年树龄</string>
+    <string name="browse_times">21次</string>
+    <string name="property_details_time">2016-09-12</string>
+    <string name="property_details_money">¥96</string>
+    <string name="property_basic_details">产权基本信息</string>
+    <string name="area_size">面积大小</string>
+    <string name="region">地区</string>
+    <string name="region_data">陕西/西安/户县</string>
+    <string name="property_type_data">园地/果园</string>
+    <string name="area_size_data">46亩</string>
+    <string name="transfer_term_data">9年</string>
+    <string name="transfer_mode_data">转让</string>
+    <string name="seller_description">发布者说明</string>
+    <string name="seller_description_data">
+        树龄为15年的树，靠近210国道，可作为采摘园，因特殊情况，亟虚转让，非诚勿扰！！！
+    </string>
+    <string name="property_details_person">刘先生</string>
+    <string name="property_details_float_money">¥96万元</string>
+
+
+    <!-- 客商动态 -->
+    <string name="business_dynamics_search_hint">富士收购/药材柴胡/玉米收购</string>
+    <string name="merchants_release">客商发布</string>
+    <string name="merchants_msg">客商信息</string>
+    <string name="household_release">农户发布</string>
+    <string name="merchants_dynamic">客商动态</string>
+    <string name="i_am_merchants">我是客商</string>
+    <string name="i_am_household">我是农户</string>
+    <string name="select_release_type_byidentity">根据身份选择要发布的类型\n身份可在个人中心修改
+    </string>
+
+    <string name="right_arrow">></string>
+    <string name="entrepreneurship_training_title_city">延安</string>
+    <string name="entrepreneurship_training_title_county">洛川</string>
+    <string name="entrepreneurship_training_content_title">陕西青年农场主培训班11日开班
+    </string>
+    <string name="entrepreneurship_training_release_time">发布时间：</string>
+    <string name="entrepreneurship_training_release_time_data">2016-09-12
+    </string>
+    <string name="entrepreneurship_training_browse_volume">浏览量</string>
+    <string name="entrepreneurship_training_browse_volume_data">86</string>
+    <string name="entrepreneurship_training_content_data">
+        根据《陕西省“现代青年农场主计划”实施方案》的通知要求，结合我省实际，团省委、省农业厅、省教育厅计划2016年在陕西省团校培育100名现代青年农场主，现面向全省种养大户、家庭农场经营者、农民合作社骨干根据《陕西省“现代青年农场主计划”实施方案》的通知要求，结合我省实际，团省委、省农业厅、省教育厅计划2016年在陕西省团校培育100名现代青年农场主，现面向全省种养大户、家庭农场经营者、农民合作社骨干根据《陕西省“现代青年农场主计划”实施方案》的通知要求，结合我省实际，团省委、省农业厅、省教育厅计划2016年在陕西省团校培育100名现代青年农场主，现面向全省种养大户、家庭农场经营者、农民合作社骨干
+    </string>
+    <string name="entrepreneurship_training_organizer_data">组 织 者：
+    </string>
+    <string name="entrepreneurship_training_training_phone_data">
+        咨询电话：
+    </string>
+    <string name="entrepreneurship_training_training_time_data">
+        培训时间：
+    </string>
+    <string name="entrepreneurship_training_training_place_data">洛川县农业局三楼
+    </string>
+    <string name="choice_purchase_class_type">选择要求购的产类类型</string>
+    <string name="acquisition_type">收购类型</string>
+    <string name="input_detailed_content">请输入详细内容</string>
+    <string name="production_requirement">产区要求</string>
+    <string name="choice_release_class_type">选择要发布的产类类型</string>
+    <string name="product_type">产品类型</string>
+    <string name="Agricultural_products_place">农品产地</string>
+
+
+    <!-- 产权流转 -->
+    <string name="cpr_search_hint">土地流转/老宅出售/果园承包</string>
+    <string name="latest_release">最新发布</string>
+    <string name="confirm">确定</string>
+
+
+    <!-- 乡村旅游 -->
+    <string name="rural_tourism_search_hint">礼泉袁家村/陕北民宿</string>
+    <string name="rural_tourism_info">景点信息：</string>
+    <string name="rural_tourism_name">景点名称：</string>
+    <string name="rural_tourism_phone">电话咨询：</string>
+    <string name="rural_tourism_location">地理位置：</string>
+    <string name="rural_tourism_introduce">景点介绍</string>
+
+
+    <!-- 创业培训 -->
+    <string name="entrepreneurship_training_search_hint">技术培训/洛川培训</string>
+    <string name="entrepreneurship_training_msg">培训信息</string>
+    <string name="entrepreneurship_training_msg_release_time">发布时间：</string>
+
+
+    <!-- 劳务合作 -->
+    <string name="labor_service_cooperation">劳务信息</string>
+    <string name="labor_service_cooperation_msg">请填写您要发布的农活信息</string>
+    <string name="labor_service_cooperation_area">区域：</string>
+    <string name="labor_service_cooperation_type">类型：</string>
+    <string name="lsc_release_msg">请填写您要发布的农活信息</string>
+    <string name="lsc_release_type">农活类型</string>
+    <string name="lsc_release_place">干活地点</string>
+    <string name="lsc_release_title">标题</string>
+    <string name="lsc_release_title_hint">请输入标题</string>
+    <string name="lsc_release_content">详细说明</string>
+    <string name="lsc_release_content_hint">请输入详细说明（人数、工资）</string>
+    <string name="lsc_release_time">干活时间</string>
+    <string name="lsc_release_person">发布人</string>
+    <string name="lsc_release_person_hint">请输入姓名</string>
+    <string name="lsc_release_phone">联系方式</string>
+    <string name="lsc_release_phone_hint">请输入手机号</string>
+    <string name="lsc_release_vc">验证码</string>
+    <string name="lsc_release_vc_hint">请输入验证码</string>
+    <string name="lsc_release_other_similar">其他同类</string>
+    <string name="lsc_release_details_person">发布人：</string>
+    <string name="lsc_release_details_time">发布时间：</string>
+    <string name="lsc_release_pop_address">地址：</string>
+    <string name="lsc_release_pop_time">时间：</string>
+
+
+    <!-- 农资农机 -->
+    <string name="agricultural_machinery">农资农机</string>
+    <string name="agricultural_machinery_search_hint">搜索农资类型</string>
+    <string name="basic_information_of_property_rights">产权基本信息</string>
+    <string name="input_release_agricultural_information">请填写您要发布的农资信息</string>
+    <string name="agricultural_type">农资类型</string>
+    <string name="agricultural_machinery_place">农资农机地点</string>
+    <string name="selling_price">售卖价格</string>
+    <string name="input_price">请输入价格</string>
+    <string name="yuan">元</string>
+    <string name="agricultural_machinery_details_title">洛川农机社售600型号拖拉机两台
+    </string>
+    <string name="agricultural_machinery_button">农机</string>
+    <string name="agricultural_machinery_details_money">¥6</string>
+    <string name="agricultural_machinery_data">农机/拖拉机</string>
+
+
+    <!-- 体验农场-->
+    <string name="experience_farm">体验农场</string>
+    <string name="experience_farm_adopt_info">领养信息</string>
+    <string name="experience_farm_adopt_type">领养分类</string>
+    <string name="experience_farm_adopt_recommend">领养推荐</string>
+    <string name="experience_farm_adopt_explain">领养说明</string>
+    <string name="experience_farm_my_adopt">我的领养</string>
+    <string name="shopping_cart">购物车</string>
+    <string name="comprehensive_ranking">综合排序</string>
+    <string name="experience_farm_details_float_money">¥56元</string>
+    <string name="experience_farm_details_money">¥56</string>
+    <string name="adopt_basic_information">领养基本信息</string>
+    <string name="adopt_type">领养类型</string>
+    <string name="adopt_type_data">家养/土鸡</string>
+    <string name="adopt_mode">领养方式</string>
+    <string name="adopt_mode_data">线上</string>
+    <string name="growth_cycle">成长周期</string>
+    <string name="growth_cycle_data">3个月左右</string>
+    <string name="adopt_permissions">领养权限</string>
+    <string name="adopt_permissions_data">在线视频/实时定位</string>
+    <string name="base_introduce">基地介绍</string>
+    <string name="join_shopping_cart">加入购物车</string>
+
+    <!--  购物车 -->
+    <string name="all_select">全选</string>
+    <string name="shopping_cart_totle_price">合计:</string>
+    <string name="shopping_cart_confirm_receipt">确认收货</string>
+    <string name="shopping_cart_online_video">在线视频</string>
+
+
+    <!-- 物流信息 -->
+    <string name="logistics_information">物流信息</string>
+    <string name="logistics_information_search_hint">大型货车/去延安的车</string>
+    <string name="vehicle_source_information">车源信息</string>
+    <string name="pathway_msg">途径：</string>
+    <string name="cargo_weight_msg">载重：</string>
+    <string name="departure_time_msg">发车时间：</string>
+    <string name="choice_incidentally_information">请选择要捎货的信息</string>
+    <string name="type_of_goods">货物类型</string>
+    <string name="ton">吨</string>
+    <string name="cargo_weight">货物重量</string>
+    <string name="input_weight">请输入重量</string>
+    <string name="destination">目的地</string>
+    <string name="choice_release_vehicle_information">选择要发布的车辆信息</string>
+    <string name="vehicle_type">车辆类型</string>
+    <string name="load_weight">载重量</string>
+    <string name="input_load_weight">请输入载重量</string>
+    <string name="originating_place">始发地</string>
+    <string name="pathway">途径地(内容可以为空)</string>
+    <string name="departure_data">发车日期</string>
+    <string name="departure_time">发车时间</string>
+    <string name="shipment_info">捎货信息</string>
+    <string name="i_want_shipment">我要捎货</string>
+    <string name="serial_number">序号</string>
+    <string name="goods_land">货物地</string>
+    <string name="type">类型</string>
+    <string name="tonnage">吨数</string>
+    <string name="shipment_person">捎货人</string>
+
+
+    <string name="tour_addres">旅游景点</string>
+    <string name="tv_top_lable">劳务信息</string>
+    <string name="labor_service_titale">车源信息</string>
+    <string name="framer_msg">农户信息</string>
+    <string name="lsc_release_address">干活地点</string>
+    <string name="lsc_release_people_count">人数</string>
+    <string name="logistics_information_get_good">捎货发布</string>
+    <string name="entrepreneurship_training_car_start_time">发车地址：</string>
+    <string name="entrepreneurship_training_car_end_time">终点地址：</string>
+    <string name="entrepreneurship_training_car_rount_address">途径地点：</string>
+
+    <!--  特产电商 -->
+    <string name="specifications">规格</string>
+    <string name="specifications_data">5斤装</string>
+    <string name="see_details_chart">见详情图</string>
+    <string name="runtu_specialty">闰土特产</string>
+    <string name="specialty_money">¥49.90</string>
+    <string name="specialty_receipt_number">3.2万人收货</string>
+    <string name="product_specifications">商品规格</string>
+    <string name="product_details">商品详情</string>
+    <string name="specialty_electricity_suppliers">特产电商</string>
+    <string name="fruits_in_season">时令水果</string>
+    <string name="product_recommend">产品推荐</string>
+    <string name="born_and_bred">土生土长</string>
+    <string name="cereals">五谷杂粮</string>
+    <string name="local_recommendation">地方推荐</string>
+    <string name="specialty_search_hint">洛川苹果/富平柿饼/延安小米</string>
+    <string name="local_features">地方特色</string>
+
+
+    <string name="runtu_mall">闰土商城</string>
+    <string name="region_choice">地域选择</string>
+    <string name="fruit_dried_fruit">水果干果</string>
+    <string name="poultry_egg_milk">蛋禽肉奶</string>
+    <string name="vegetable_food">蔬菜食品</string>
+    <string name="handicraft">手工艺品</string>
+    <string name="shanyeganhuo">山野干货</string>
+    <string name="other">其他</string>
+
+
+    <!--摄像头-->
+
+    <string name="product_calssfiy_name">产品分类</string>
+    <string name="fruit_recommend">时令水果</string>
+    <string name="add_receipt_guding_number">固定电话：</string>
+    <string name="wait_set_good">待发货</string>
+
+
+    <!--摄像头-->
+    <string name="camera_user">用户名</string>
+    <string name="version_code">版本号</string>
+    <string name="soft_name">软件名</string>
+    <string name="camera_pwd">密码</string>
+    <string name="str_ok">确定</string>
+    <string name="str_cancel">取消</string>
+    <string name="exit_alert">确认退出吗 ?</string>
+    <string name="password">密码:</string>
+    <string name="showpwd">显示密码</string>
+    <string name="connected">已连接</string>
+    <string name="pwd_no_empty">密码不能为空</string>
+    <string name="camera_port">端口</string>
+    <string name="send_error">发送失败</string>
+    <string name="recv_error">接收失败</string>
+    <string name="unknow_error">未知错误</string>
+    <string name="disclaimer_conent">深圳市欧杰特科技有限公司保留本软件的所有权，盗版必究。</string>
+    <string name="version_conent">V 0.0.0.1</string>
+    <string name="contact_me">"公司网站: http://www.object-camera.com客服邮箱:
+        support@object-camera.com"
+    </string>
+    <string name="more_about_disclaimer">软件声明</string>
+    <string name="more_about_version">版本信息</string>
+    <string name="more_about_contact">联系我们</string>
+    <string name="camera_not_online">相机断线,请回首页重连</string>
+    <string name="app_running">正在运行</string>
+
+    <string name="sensorlist_addnewdevice">添加新设备</string>
+    <string name="sensor_list_sensor">传感器</string>
+    <string name="sensorlist_havedevice">您已添加的设备</string>
+    <string name="add_sensor_infrerad_desc">红外是利用红外辐射的热效应,检测是否有人或者动物经过。</string>
+    <string name="add_sensor_gas_desc">气感是通过气体传感器探测周围环境中可燃气体是否超过安全值。</string>
+    <string name="add_sensor_smoke_desc">烟感是通过监测烟雾的浓度来实现火灾防范。</string>
+    <string name="add_sensor_control_desc">无线遥控就是一种用来远程控制机器的装置。</string>
+    <string name="add_sensor_siren_desc">警笛可以接收遥控器，无线门磁、无线红外等传感器的报警信号</string>
+    <string name="add_sensor_door_desc">门磁是用来探测门、窗、抽屉等是否被非法打开或者移动。</string>
+    <string name="start_codding_gas_desc">按下侧边的按钮，红色指示灯闪动即可</string>
+    <string name="start_codding_smoke_desc">按下侧边的按钮，有声音提示完成对码</string>
+    <string name="start_codding_infrerad_desc">手在红外前摆动一下</string>
+    <string name="start_codding_siren_desc">接通警笛电源</string>
+    <string name="sensor_type_door">门磁</string>
+    <string name="sensor_type_infrared">红外</string>
+    <string name="sensor_type_smoke">烟感</string>
+    <string name="sensor_type_siren">警笛</string>
+    <string name="sensor_type_gas">气感</string>
+    <string name="sensor_type_remote">遥控器</string>
+    <string name="sensor_type_camera">摄像头</string>
+    <string name="sensor_type_curtain">幕帘</string>
+
+    <!-- 欢迎界面 -->
+    <string name="str_version">版本</string>
+
+    <!-- 主界面 -->
+    <string name="pppp_status_initialing">已连接, 正在初始化</string>
+    <string name="delete_camera">删除</string>
+    <string name="list_option">操作</string>
+    <string name="del_alert">确认删除?</string>
+    <string name="str_search">局域网搜索</string>
+    <string name="check_loction">查看录像</string>
+    <string name="str_add">添加</string>
+    <string name="str_about">关于</string>
+    <string name="connecting">正在连接...</string>
+    <string name="init_network_error">初始化网络失败</string>
+    <string name="connect_failed">连接失败</string>
+    <string name="edit">修改</string>
+    <!-- // <string name="setting">设置</string>-->
+    <string name="string_about">关于我们</string>
+    <string name="camera_type">摄像机类型</string>
+    <string name="device_id_name">ID:</string>
+    <string name="device_type_name">类型:</string>
+    <string name="device_status_name">状态:</string>
+    <string name="pppp_status_unknown">未知状态</string>
+    <string name="pppp_status_connecting">正在连接</string>
+    <string name="pppp_status_online">在线</string>
+    <string name="pppp_status_disconnect">断线</string>
+    <string name="pppp_status_connect_failed">连接失败</string>
+    <string name="pppp_status_pwd_error">密码错误</string>
+    <string name="pppp_status_invalid_id">ID号无效</string>
+    <string name="pppp_dev_type_unknown">未知类型</string>
+    <string name="device_not_on_line">摄像机不在线</string>
+    <string name="pppp_mode">模式:</string>
+    <string name="pppp_mode_p2p_normal">p2p连接</string>
+    <string name="pppp_mode_p2p_relay">p2p转发</string>
+    <string name="pppp_mode_unknown">未知</string>
+    <string name="pppp_status_connect_timeout">连接超时</string>
+    <string name="main_tap_here_add_vidicon">请按此处新增摄像机</string>
+    <string name="back">返回</string>
+    <string name="done">完成</string>
+    <string name="main_select_all">全选</string>
+    <string name="main_select_reverse">反选</string>
+    <string name="main_edit">编辑</string>
+    <string name="main_check">查看</string>
+    <string name="main_vidicon">摄像机</string>
+    <string name="main_alarm_event">报警事件</string>
+    <string name="main_pic">图片</string>
+    <string name="main_vid">录像</string>
+    <string name="main_remote">远程</string>
+    <string name="main_phone">手机</string>
+    <string name="main_setting_prompt">摄像机不在线,无法进行设置</string>
+    <string name="exit">退出</string>
+    <string name="main_alarm">报警</string>
+    <string name="main_more">更多</string>
+    <string name="main_plea_addcam">请先添加摄像机</string>
+    <string name="main_not_administrator">该用户不是管理员</string>
+    <string name="main_show_back">再按一次，退出程序！</string>
+    <string name="main_show_back1">再按一次，退出在线视频！</string>
+    <!-- 视频参数设置界面 -->
+    <string name="vga">普清</string>
+    <string name="qvga">高清</string>
+    <string name="mobile">手机</string>
+    <string name="min">最低</string>
+    <string name="low">低</string>
+    <string name="middle">中</string>
+    <string name="high">高</string>
+    <string name="max">最高</string>
+    <string name="right">向右</string>
+    <string name="left">向左</string>
+    <string name="up">向上</string>
+    <string name="down">向下</string>
+    <string name="preset_set">预置位设置</string>
+    <string name="preset_call">预置位调用</string>
+
+    <!-- 添加相机/修改相机 界面 -->
+    <string name="input_camera_name">请输入摄像机名称</string>
+    <string name="add_camera">添加摄像机</string>
+    <string name="edit_camera">修改摄像机</string>
+    <string name="camera_name">名称</string>
+    <string name="camera_addr">IP地址</string>
+    <string name="input_camera_addr">请输入IP地址</string>
+    <string name="input_camera_port">请输入端口</string>
+    <string name="input_camera_user">请输入用户名</string>
+    <string name="input_camera_id">请输入设备ID</string>
+    <string name="camera_id">设备ID</string>
+    <string name="scan_cameraid">扫描条码</string>
+    <string name="scan_cameraid_fail">扫描失败,请重新扫描</string>
+    <string name="add_search_result">搜索结果</string>
+    <string name="add_search_no">没有搜索到,请重试...</string>
+    <string name="add_twodimensioncode">正在启动二维码程序...</string>
+
+    <!-- 搜索相机界面 -->
+    <string name="searching_tip">正在搜索，请稍候...</string>
+    <string name="search_camera">搜索摄像机</string>
+    <string name="refresh">刷新</string>
+
+    <!-- 设置界面 -->
+    <string name="setting_camera">摄像机设置</string>
+    <string name="setting_wifi">Wifi设置</string>
+    <string name="setting_user">用户设置</string>
+    <string name="setting_ftp">Ftp设置</string>
+    <string name="setting_alerm">报警设置</string>
+    <string name="setting_time">设备时钟设置</string>
+    <string name="setting_mail">邮件设置</string>
+    <string name="setting_sdcard">SD卡设置</string>
+    <string name="datetime_setting">时间设置</string>
+    <string name="mail_setting">邮件设置</string>
+    <string name="ftp_setting">Ftp设置</string>
+    <string name="alerm_setting">报警设置</string>
+    <!-- 摄像机  SDCard 设置 -->
+    <string name="sdcard_getparams">正在获取SDCard信息...</string>
+    <string name="sdcard_total">SD卡总容量(M):</string>
+    <string name="sdcard_remain">SD卡剩余量(M):</string>
+    <string name="sdcard_state">SD卡状态:</string>
+    <string name="sdcard_format">格式化</string>
+    <string name="sdcard_inserted">SD卡已经插入</string>
+    <string name="sdcard_no_inserted">没有插SD卡</string>
+    <string name="sdcard_video">录像中...</string>
+    <string name="sdcard_file_error">文件系统错误</string>
+    <string name="sdcard_isformatting">SD卡正在格式化中...</string>
+    <string name="sdcard_status_info">没有插卡或者需要格式化</string>
+    <string name="sdcard_coverage">录像覆盖:</string>
+    <string name="sdcard_recordlength">录像时长(分钟):</string>
+    <string name="sdcard_recordtime">定时录像:</string>
+    <string name="sdcard_schedule">SD卡设置</string>
+    <string name="sdcard_range">范围5-180</string>
+    <string name="sdcard_set_failed">SD卡设置失败</string>
+    <string name="sdcard_set_success">SD卡设置成功</string>
+    <string name="sdcard_formatsd">格式化SD卡需要30秒钟,是否格式化?</string>
+    <string name="sdcard_no_inserted_format_faile">没有插SD卡，格式化失败!</string>
+    <string name="exit_sd_alert">再次点击程序将在后台运行，按“确定”按钮，关闭程序。</string>
+
+    <!-- Wifi 设置 -->
+    <string name="wifi">Wifi</string>
+    <string name="wifi_checkmode">验证类型:</string>
+    <string name="wifi_manager">管理WiFi网络</string>
+    <string name="wifi_signal_strong">信号强度:</string>
+    <string name="wifi_safe">安全性:</string>
+    <string name="wifi_no_safe">无</string>
+    <string name="wifi_set_failed">WiFi设置失败</string>
+    <string name="wifi_set_success">WiFi设置成功,摄像机正在重启...</string>
+    <string name="wifi_not_connected">未连接</string>
+    <string name="wifi_scanning">WiFi正在扫描,请稍候...</string>
+    <string name="wifi_scan_failed">WiFi扫描失败</string>
+    <string name="wifi_getparams">正在获取WiFi信息...</string>
+    <string name="wifi_getparams_failed">获取WiFi信息失败</string>
+    <string name="wifi_notchange">WiFi没有更改,不需要设置</string>
+    <string name="wifi_pwd_toolong">密码不能超过128位</string>
+    <!-- User 设置 -->
+    <string name="user_admin">管理员</string>
+    <string name="user_operator">操作者</string>
+    <string name="user_visitor">参观者</string>
+    <string name="user_setting">用户设置</string>
+    <string name="user_set_failed">用户设置失败</string>
+    <string name="user_set_success">用户设置成功,摄像机正在重启</string>
+    <string name="user_name_no_empty">用户名不能为空</string>
+    <string name="user_name">用户名:</string>
+    <string name="user_getparams">正在获取用户信息...</string>
+    <string name="user_getparams_failed">获取用户信息失败</string>
+    <string name="user_name_toolong">用户名不能超过64位</string>
+    <string name="user_pwd_toolong">密码不能超过64位</string>
+
+    <!-- Alerm 设置 -->
+    <string name="alerm_detector_layout">移动侦测布防</string>
+    <string name="alerm_detector_sensitivity">移动侦测灵敏度</string>
+    <string name="alerm_sensitivity_desc">(数值越小越灵敏)</string>
+    <string name="alerm_io_layout">报警输入布防</string>
+    <string name="alerm_trigger_level">触发电平</string>
+    <string name="alerm_presetsit">报警时预置位联动</string>
+    <string name="alerm_audio_level">声音侦测布防</string>
+    <string name="alerm_audio_sensitivity">灵敏度</string>
+    <string name="alerm_upload_picture_num">上传图片张数</string>
+    <string name="alerm_io_move">报警后 IO 联动</string>
+    <string name="alerm_ioout_level">输出电平</string>
+    <string name="alerm_mail_inform">报警后邮件通知</string>
+    <string name="alerm_upload_picture">报警后上传图片</string>
+    <string name="alerm_upload_picture_time_interval">上传图片时间间隔(秒)</string>
+    <string name="alerm_trigger_event">报警触发事件</string>
+    <string name="alerm_set_failed">报警设置失败</string>
+    <string name="setting_aler_sucess">报警设置成功</string>
+    <string name="alerm_audio_levelhigh">高灵敏度</string>
+    <string name="alerm_audio_levelmiddle">中灵敏度</string>
+    <string name="alerm_audio_levellow">低灵敏度</string>
+    <string name="alerm_ioin_levelhight">高电平</string>
+    <string name="alerm_audio_levelforbid">禁止检测</string>
+    <string name="alerm_ioin_levellow">低电平</string>
+    <string name="alerm_getparams">正在获取报警信息...</string>
+    <string name="alerm_getparams_failed">获取报警信息失败</string>
+    <string name="alerm_preset_no">无</string>
+    <string name="alerm_uploadinterval_toolong">上传时间不能超过3600秒</string>
+    <string name="alerm_uploadpic_prompt">0或空表示不上传图片</string>
+    <string name="alerm_log">报警日志</string>
+    <string name="alerm_motion_alarm">移动侦测报警</string>
+    <string name="alerm_gpio_alarm">IO联动报警</string>
+    <string name="alerm_no_log">无报警日志</string>
+    <string name="alerm_record">报警后录像</string>
+
+    <!-- 时间设置 -->
+    <string name="date_device_time">设备时钟时间</string>
+    <string name="date_device_timezone">设备时区设定</string>
+    <string name="date_ntp_server_auto_check">使用 NTP服务器自动校时</string>
+    <string name="date_phone_time_auto_check">使用手机时间校准设备时钟</string>
+    <string name="date_ntp_server">NTP服务器</string>
+    <string name="date_middle_island">(GMT-11:00)中途岛,萨摩亚群岛</string>
+    <string name="date_hawaii">(GMT -10:00) 夏威夷</string>
+    <string name="date_alaska">(GMT-09:00)阿拉斯加</string>
+    <string name="date_pacific_time">(GMT-08:00)太平洋时间(美国和加拿大)</string>
+    <string name="date_mountain_time">(GMT-07:00)山地时间(美国和加拿大)</string>
+    <string name="date_middle_part_time">(GMT-06:00)中部时间(美国和加拿大),墨西哥城</string>
+    <string name="date_eastern_time">(GMT-05:00)东部时间(美国和加拿大),利马,波哥大</string>
+    <string name="date_ocean_time">(GMT-04:00)大西洋时间(加拿大),圣地亚哥,拉巴斯</string>
+    <string name="date_newfoundland">(GMT-03:30)纽芬兰</string>
+    <string name="date_brasilia">(GMT-03:00)巴西利亚,布宜若斯艾丽斯,乔治敦</string>
+    <string name="date_center_ocean">(GMT-02:00)中大西洋</string>
+    <string name="date_cape_verde_island">(GMT-01:00)佛得角群岛</string>
+    <string name="date_greenwich">(GMT)格林威治平时,伦敦,里斯本,卡萨布兰卡</string>
+    <string name="date_brussels">(GMT+01:00)布鲁赛尔,巴黎,柏林,罗马,马德里,斯多哥尔摩, 贝尔格莱德, 布拉格
+    </string>
+    <string name="date_athens">(GMT +02:00) 雅典, 耶路撒冷, 开罗, 赫尔辛基</string>
+    <string name="date_nairobi">(GMT +03:00) 内罗毕, 利雅得, 莫斯科</string>
+    <string name="date_teheran">(GMT +03:30) 德黑兰</string>
+    <string name="date_baku">(GMT +04:00) 巴库, 第比利斯, 阿布扎比, 马斯科特</string>
+    <string name="date_kebuer">(GMT +04:30) 科布尔</string>
+    <string name="date_islamabad">(GMT +05:00) 伊斯兰堡, 卡拉奇, 塔森干</string>
+    <string name="date_calcutta">(GMT +05:30) 加尔各答, 孟买, 马德拉斯, 新德里</string>
+    <string name="date_alamotu">(GMT +06:00) 阿拉木图, 新西伯利亚, 阿斯塔南, 达尔</string>
+    <string name="date_bangkok">(GMT +07:00) 曼谷, 河内, 雅加达</string>
+    <string name="date_beijing">(GMT +08:00) 北京, 新加坡, 台北</string>
+    <string name="date_seoul">(GMT +09:00) 首尔, 雅库茨克, 东京</string>
+    <string name="date_darwin">(GMT +09:30) 达尔文</string>
+    <string name="date_guam">(GMT +10:00) 关岛, 墨尔本, 悉尼, 莫尔兹比港, 符拉迪沃斯托克</string>
+    <string name="date_suolumen">(GMT +11:00)马加丹,所罗门群岛, 新喀里多尼亚</string>
+    <string name="date_auckland">(GMT +12:00) 奥克兰, 惠灵顿, 斐济</string>
+    <string name="date_ntp_server_time_nist_gov">time.nist.gov</string>
+    <string name="date_ntp_server_time_kriss_re_kr">time.kriss.re.kr</string>
+    <string name="date_ntp_server_time_windows_com">time.windows.com</string>
+    <string name="date_ntp_server_time_nuri_net">time.nuri.net</string>
+    <string name="date_setting_success">设备时钟时间设置成功</string>
+    <string name="date_setting_failed">设备时钟时间设置失败</string>
+    <string name="date_get_params">正在获取时钟信息...</string>
+
+    <!-- 邮件设置 -->
+    <string name="mail_sender">发送者</string>
+    <string name="mail_smtp_server">SMTP服务器</string>
+    <string name="mail_smtp_port">SMTP端口</string>
+    <string name="mail_check">需要验证</string>
+    <string name="mail_ssl">SSL</string>
+    <string name="mail_ssl_none">NONE</string>
+    <string name="mail_ssl_ssl">SSL</string>
+    <string name="mail_ssl_tls">TLS</string>
+    <string name="mail_smtp_user">SMTP用户</string>
+    <string name="mail_smtp_pwd">SMTP密码</string>
+    <string name="mail_receiver1">接受者1</string>
+    <string name="mail_receiver2">接受者2</string>
+    <string name="mail_receiver3">接受者3</string>
+    <string name="mail_receiver4">接受者4</string>
+    <string name="mail_163">smtp.163.com</string>
+    <string name="mail_126">smtp.126.com</string>
+    <string name="mail_sina">smtp.sina.com</string>
+    <string name="mail_yahoo_com">smtp.mail.yahoo.com</string>
+    <string name="mail_sohu">smtp.sohu.com</string>
+    <string name="mail_yeah">smtp.yeah.net</string>
+    <string name="mail_tom">smtp.tom.com</string>
+    <string name="mail_21cn">smtp.21cn.com</string>
+    <string name="mail_qq">smtp.qq.com</string>
+    <string name="mail_gmail">smtp.gmail.com</string>
+    <string name="mail_eyou">smtp.eyou.com</string>
+    <string name="mail_263">smtp.263.net</string>
+    <string name="mail_setting_success">邮件设置成功</string>
+    <string name="mail_setting_failed">邮件设置失败</string>
+    <string name="mail_getparams">正在获取邮件信息...</string>
+
+    <!-- Ftp设置 -->
+    <string name="ftp_server">FTP服务器</string>
+    <string name="ftp_port">FTP端口</string>
+    <string name="ftp_user">FTP用户</string>
+    <string name="ftp_pwd">FTP密码</string>
+    <string name="ftp_upload_interval_time">上传图片时间间隔(秒)</string>
+    <string name="ftp_upload_prompt">空或者0表示不定时上传图片</string>
+    <string name="ftp_setting_success">Ftp设置成功</string>
+    <string name="ftp_setting_failed">Ftp设置失败</string>
+    <string name="ftp_getparams">正在获取Ftp信息...</string>
+
+    <!-- Ptz设置 -->
+    <!-- 查看本地图片界面 -->
+    <string name="check_localpic">查看快照</string>
+    <string name="takepicture_time">时间:</string>
+    <string name="picture_sum">张</string>
+
+    <string name="delete_local_picture">删除该照片</string>
+    <string name="delete_local_all_picture">删除所有照片</string>
+    <string name="video_sum">个</string>
+    <string name="sum_pic">共:</string>
+    <string name="localpic_no">沒有照片</string>
+    <string name="local_picture">本地图片</string>
+
+    <!-- 查看远程图片界面 -->
+    <string name="remote_pic_offline">摄像机不在线, 无法播放远程图片</string>
+
+    <!-- 查看本地视频界面 -->
+    <string name="check_localvid">查看本地</string>
+    <string name="local_video_date">录像时间:</string>
+    <string name="local_video_badfile">文件已损坏</string>
+
+    <!-- 查看远程视频界面 -->
+    <string name="remote_video_title">远程录像</string>
+    <string name="no_video">没有远程录像文件</string>
+    <string name="remote_video_getparams">正在获取远程录像信息...</string>
+    <string name="remote_video_offline">摄像机不在线, 无法播放远程录像</string>
+    <string name="remote_start_prompt">开始日期不能大于结束日期</string>
+    <string name="remote_end_prompt">结束日期不能小于开始日期</string>
+    <string name="remote_to">至</string>
+
+    <!-- 播放界面 -->
+    <string name="stopplay_alert">结束播放?</string>
+    <string name="camera_type_mjpeg">MJPEG</string>
+    <string name="camera_type_h264">H.264</string>
+    <string name="h264_main_stream">H.264主码流</string>
+    <string name="h264_sub_stream">H.264次码流</string>
+    <string name="mjpeg_sub_stream">MJPEG码流</string>
+    <string name="mjpeg_h264_stream">H.264码流</string>
+    <string name="choose_stream">选择码流</string>
+    <string name="p2p_view_time_out">已到观看时间</string>
+    <string name="p2p_relay_mode_time_out">转发模式观看,剩余时间:</string>
+    <string name="str_second">秒</string>
+    <string name="ptz_takepic_ok">拍照成功</string>
+    <string name="ptz_takepic_fail">拍照失败</string>
+    <string name="ptz_default_vedio_params">视频参数恢复默认值</string>
+    <string name="ptz_control">请按菜单键,进行云台控制</string>
+    <string name="ptz_takepic_save_fail">该设备没有SDCard,照片保存失败</string>
+    <string name="ptz_takevideo_begin">开始录像</string>
+    <string name="ptz_takevideo_end">录像结束</string>
+
+    <!-- 新加登陆后界面 -->
+
+    <string name="main_model_show_tost_connection">请连接上再操作</string>
+    <string name="main_model_u">U盘模式</string>
+    <string name="main_model_pre">预览模式</string>
+    <string name="main_model_video">系统设置</string>
+    <string name="video_model_ing">录像中....</string>
+    <string name="bingding_wifi">Wifi</string>
+    <string name="save_user">保存ID用户名密码</string>
+    <string name="unbind_wifi">未绑定Wifi</string>
+    <string name="main_model_name">奥尼行车记录仪</string>
+    <string name="bingding_wifi_sucess">绑定成功</string>
+    <string name="eixt_show_toast">本地录像中，请先停止再退出！</string>
+    <string name="login_stuta">连接状态</string>
+    <string name="play_cuting">切换中...</string>
+    <string name="cuting_u">进入U盘</string>
+    <string name="cuting_pre">进入预览</string>
+    <string name="loct_file_video">手机录像文件</string>
+    <string name="tf_file_video_loading">远程下载文件</string>
+    <string name="local_video_play_over">播放结束</string>
+    <string name="ptz_takevideo_time_show">文件损坏</string>
+    <string name="intent_show_toast">本地录像中，请先停止再进入U盘模式！</string>
+    <string name="add_check_phone">手机录像文件</string>
+    <string name="add_check_load">远程下载文件</string>
+    <string name="select_list">时间搜索</string>
+    <string name="shuxin_wifi">扫描Wifi</string>
+    <string name="videoing">录像中...</string>
+    <string name="show_toast_videoing">正在录像，请先停止再切换！</string>
+    <string name="show_toat_buzhi">此设备不支持二维码扫描！</string>
+    <string name="login_stuta_camer">相机状态</string>
+    <string name="exit_show">提示：</string>
+    <string name="exit_qu">删除本地文 件</string>
+    <string name="exit_qu_show">取 消</string>
+    <string name="exit_play_show">确认退出播放?</string>
+    <string name="exit_chenxu_show">确认退出程序?</string>
+
+    <string name="others">其他</string>
+    <string name="others_setting_currentinfo">当前设备信息:</string>
+    <string name="others_local_appver">当前界面固件:</string>
+    <string name="others_check_update">固件更新</string>
+    <string name="others_setting_servernewinfo">最新设备信息:</string>
+    <string name="good_detail">商品详情</string>
+    <string name="copyright_app_name">洛 川 闰 土 农 牧 科 技 有 限 责 任 公 司</string>
+    <string name="copyright_own">版 权 所 有</string>
+    <string name="gps_locatio">实时定位</string>
+    <string name="company_introduce">"
+       洛川闰土农牧科技有限责任公司简称“闰土农业”，是一家大学生返乡创业企业、国家级科技型中小企业、省级就业扶贫基地、延安市农业科技攻关项目承担单位、洛川县就业扶贫社区工厂、朱牛乡“三变”改革示范点，拥有发明专利等7项知识产权。
+    旨在拓宽农民增收致富门路的同时，也为城市的消费者提供绿色、环保、标准化生产、可视化管理和全程可追溯的优质农产品。采取“党支部+龙头企业+合作社+贫困户”的发展模式，通过农户入股、产权流转等方式，已经发展了黄花菜、菌草香菇、花椒等1500亩扶贫产业园，养殖了土鸡、羊等畜禽可供城市里的消费者在线认养。
+    我们秉承“先成功做人、后做事成功”的宗旨，树立“科技富民、产业扶贫、制造精品、回馈乡亲”的精神，带着“智慧和体验”的两大理念深入田间地头，打通农业电子商务最后一公里，希望能为家乡的父老相亲脱贫致富助一臂之力。
+    闰土 . 童年的记忆！"
+    </string>
+    <string name="copyright_message">闰土·农村人自己的电商平台</string>
+    <string name="app_records_number">ICP备案号：陕ICP备16018962号-1</string>
+    <string name="agreement_text">注册协议</string>
+    <string name="authentication_text">实名认证</string>
+    <string name="agree_str">我已阅读并同意遵守《闰土平台注册协议》</string>
+    <string name="rea_name_uthentication_str">我已阅读并同意遵守《闰土平台实名认证协议》</string>
+    <string name="rea_name_uthentication_title">闰土平台实名认证说明</string>
+    <string name="register_content_title">闰土平台注册说明</string>
+    <string name="register_num">注册手机号</string>
+    <string name="scan_title">二维码/条码</string>
+
+
+</resources>

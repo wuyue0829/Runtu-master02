@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff9900"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/back_Iv"
+            style="@style/BackImageStyle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/logistics_information"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/choice_release_vehicle_information"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:background="@color/contentbg"/>
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:padding="10dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:layout_gravity="left|center_vertical"
+            android:text="@string/release_person"
+            android:drawableLeft="@drawable/release_red_dot"
+            android:paddingLeft="20dp"
+            android:drawablePadding="10dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/et_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_name"
+            android:textSize="15dp"
+            android:maxLength="8"
+            android:gravity="right"
+            android:background="@null"
+            android:paddingRight="20dp"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/line1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#B7B7B7" />
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line1"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:padding="10dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:layout_gravity="left|center_vertical"
+            android:text="@string/contact_information"
+            android:drawableLeft="@drawable/release_red_dot"
+            android:paddingLeft="20dp"
+            android:drawablePadding="10dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:id="@+id/et_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_mobile_phone_number"
+            android:textSize="15dp"
+            android:background="@null"
+            android:gravity="right"
+            android:maxLength="11"
+            android:inputType="number"
+            android:paddingRight="20dp"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/line2"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#B7B7B7" />
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line2"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:padding="10dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:layout_gravity="left|center_vertical"
+            android:text="@string/verification_code"
+            android:drawableLeft="@drawable/release_red_dot"
+            android:paddingLeft="20dp"
+            android:drawablePadding="10dp"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_verification_code"
+            android:textSize="15dp"
+            android:background="@null"
+            android:inputType="number"
+            android:maxLength="6"
+            android:paddingRight="20dp"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#B7B7B7"/>
+        <TextView
+            android:id="@+id/tv_btnCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_verification_code"
+            android:textColor="#ff9900"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line3"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#B7B7B7" />
+
+    <ImageView
+        android:id="@+id/release_Iv"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/confirm_release"
+        android:paddingTop="20dp"/>
+</RelativeLayout>

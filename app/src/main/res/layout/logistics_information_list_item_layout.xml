@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_yellow_selectop"
+                android:padding="10dp">
+
+    <TextView
+        android:id="@+id/title_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/state_Tv"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/state_Tv"
+        android:ellipsize="end"
+        android:maxLength="17"
+        android:singleLine="true"
+        android:text="现有三米长大客车一辆，可跑陕西内短途..."
+        android:textColor="@android:color/black"/>
+
+
+    <TextView
+        android:id="@+id/state_Tv"
+        android:layout_width="90dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:background="@color/already_started_bg"
+        android:gravity="center"
+        android:text="已发车"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/pathway_msg_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_Tv"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/pathway_msg"
+        android:textColor="@color/order_price_text_color"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tv_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_Tv"
+        android:layout_toRightOf="@+id/pathway_msg_Tv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textSize="12sp"/>
+
+   <!-- <com.mac.runtu.custom.ChannelView
+        android:id="@+id/channelView"
+        android:layout_marginTop="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_Tv"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/pathway_msg_Tv"
+        app:rectColor="@color/logistics_information_via_bg"
+        app:rectTextPaddingBottom="10"
+        app:rectTextPaddingLeft="20"
+        app:rectTextPaddingRight="20"
+        app:rectTextPaddingTop="10"
+        app:textColor="@color/logistics_information_via_bg"
+        app:textSize="16sp"
+    />-->
+    <TextView
+        android:id="@+id/cargo_weight_msg_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pathway_msg_Tv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/cargo_weight_msg"
+        android:textColor="@color/already_started_bg"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/cargo_weight_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cargo_weight_msg_Tv"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/cargo_weight_msg_Tv"
+        android:text="10吨"
+        android:textColor="@color/already_started_bg"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/departure_time_msg_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cargo_weight_msg_Tv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/departure_time_msg"
+        android:textColor="@color/order_price_text_color"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/departure_time_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/departure_time_msg_Tv"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/departure_time_msg_Tv"
+        android:text="2016-09-20"
+        android:textColor="@color/order_price_text_color"
+        android:textSize="12sp"/>
+
+
+    <TextView
+        android:id="@+id/requests_Tv"
+        android:layout_width="90dp"
+        android:layout_height="25dp"
+        android:layout_alignBaseline="@id/departure_time_msg_Tv"
+        android:layout_alignParentRight="true"
+        android:background="@color/number_of_requests_bg"
+        android:gravity="center"
+        android:text="已三人请求"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/time_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/departure_time_msg_Tv"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/time_icon"
+        android:drawablePadding="5dp"
+        android:text="2016-09-12"/>
+
+
+    <TextView
+        android:id="@+id/browse_volume_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/time_Tv"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/eye_icon"
+        android:drawablePadding="5dp"
+        android:text="86"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/time_Tv"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/browse_volume_Tv"
+        android:text="人已浏览"/>
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_yellow_selectop"
+                android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_28"/>
+
+    <TextView
+        android:id="@+id/title_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:lines="1"
+        android:text="延安 洛川 大山里土鸡"
+        android:layout_marginTop="1dp"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/address_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_Tv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:background="@drawable/business_dynamics_address_bg"
+        android:text="洛川"
+        android:textColor="@color/business_dynamics_address_color"
+        android:textSize="12sp"/>
+
+
+    <TextView
+        android:id="@+id/type_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_Tv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/address_Tv"
+        android:background="@drawable/business_dynamics_type_bg"
+        android:text="土鸡"
+        android:textColor="@color/business_dynamics_type_color"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/price_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/address_Tv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/imageView"
+        android:text="￥56.00"
+        android:textColor="@color/titlebg"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/price_unit_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/price_Tv"
+        android:layout_below="@id/address_Tv"
+        android:layout_toRightOf="@+id/price_Tv"
+        android:text="元"
+        android:textSize="16sp"/>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/price_Tv"
+                  android:layout_marginTop="3dp"
+                  android:layout_toRightOf="@+id/imageView"
+                  android:gravity="center_vertical"
+                  android:orientation="horizontal"
+                  android:padding="5dp">
+        <TextView
+            android:id="@+id/passengers_Tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/adopt_icon"
+            android:gravity="center_vertical"
+            android:drawablePadding="5dp"
+            android:text="已有102人领养"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/localtion_Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/location_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="-----"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

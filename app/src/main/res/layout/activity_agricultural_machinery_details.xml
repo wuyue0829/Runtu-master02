@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F5F5F5"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff9900"
+        android:gravity="center_vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/back_Iv"
+            style="@style/BackImageStyle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/agricultural_machinery"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"/>
+
+
+
+    </RelativeLayout>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:scrollbars="none"
+                android:layout_weight="1">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                />
+                <TextView
+                    android:id="@+id/tv_image_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="100dp"
+                    android:background="#80000000"
+                    android:textSize="14dp"
+                    android:padding="10dp"
+                    android:text="¥5元"
+                    android:textColor="#ffffff"/>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/menu_LL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:textSize="14dp"
+                    android:textIsSelectable="true"
+                    android:text="@string/agricultural_machinery_details_title"/>
+
+                <TextView
+                    android:id="@+id/tv_kind1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/agricultural_machinery_button_bg"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/agricultural_machinery_button"
+                    android:textColor="#ffffff"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ses_Iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/property_rights_details_eye"/>
+
+                    <TextView
+                        android:id="@+id/tv_liulanCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:textSize="14dp"
+                        android:text="@string/browse_times"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/property_rights_details_time"/>
+
+                    <TextView
+                        android:id="@+id/tv_creatTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:textSize="14dp"
+                        android:text="@string/property_details_time"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/agricultural_machinery_details_money"
+                        android:textColor="#ff9a02"
+                        android:lines="1"
+                        android:maxLength="8"
+                        android:textSize="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="@string/million_yuan"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ef_Iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/lsc_Iv"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:textSize="14dp"
+                        android:text="@string/property_basic_details"
+                        android:textColor="#ff9a02"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#cccccc">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:src="@drawable/property_rights_details_line"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="#ffffff">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_column="0"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/property_rights_details_navigation"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_weight="0.11"
+                            android:textSize="14dp"
+                            android:text="@string/region"/>
+
+                        <TextView
+                            android:id="@+id/tv_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:layout_weight="2"
+                            android:gravity="right|center_vertical"
+                            android:textSize="14dp"
+                            android:paddingRight="10dp"
+                            android:text="@string/region_data"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="40dp"
+                        android:background="#B7B7B7"/>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_column="0"
+                            android:layout_weight="0.1"
+                            android:paddingRight="5dp"
+                            android:src="@drawable/property_rights_details_property_type"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_weight="0.11"
+                            android:textSize="14dp"
+                            android:text="@string/agricultural_machinery"/>
+
+                        <TextView
+                            android:id="@+id/tv_kind2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="2"
+                            android:layout_weight="2"
+                            android:gravity="right|center_vertical"
+                            android:textSize="14dp"
+                            android:paddingRight="10dp"
+                            android:text="@string/agricultural_machinery_data"/>
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="40dp"
+                        android:background="#B7B7B7"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginLeft="40dp"
+                        android:background="#B7B7B7"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"/>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lsc_Iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bottom_LL"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:textSize="14dp"
+                    android:text="@string/seller_description"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#B7B7B7"/>
+
+                <TextView
+                    android:id="@+id/tv_des"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:textIsSelectable="true"
+                    android:text=""/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#B7B7B7"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/user_photo_Iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/image_52"/>
+
+        <TextView
+            android:id="@+id/tv_people_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/user_photo_Iv"
+
+            android:text="刘先生"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:id="@+id/phone_service_Iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/phone_service"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
+

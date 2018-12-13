@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/menu_LL"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/contentbg"
+              android:orientation="vertical">
+
+    <include layout="@layout/serach_item_layout_menu"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/merchants_release_Tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_just_bottom_line_business_dynamics_normal_bg"
+            android:gravity="center"
+            android:textColor="@color/normal_color"
+            android:text="@string/merchants_release"
+            />
+
+        <TextView
+            android:id="@+id/household_release_Tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_just_bottom_line_business_dynamics_normal_bg"
+            android:gravity="center"
+            android:text="@string/household_release"
+            android:textColor="@color/normal_color"/>
+    </LinearLayout>
+
+
+    <!-- <include layout="@layout/address_select_layout_5"/> -->
+    <include layout="@layout/address_select_layout_5_image"/>
+
+</LinearLayout>

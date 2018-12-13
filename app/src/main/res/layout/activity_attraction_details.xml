@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/contentbg"
+                tools:context=".activity.ruraltourism.AttractionDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff9900"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/back_Iv"
+            style="@style/BackImageStyle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/rural_tourism"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"/>
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@+id/relativeLayout1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/baseinfo_RL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+            >
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="10dp"
+                />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/banner"
+                    android:background="#80000000"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/banner_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:lines="1"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/banner_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:lines="1"
+                        android:text=""
+                        android:textColor="@android:color/white"
+                        android:visibility="gone"
+                        android:textSize="10sp"/>
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:padding="5dp">
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/rural_tourism_info"
+                        android:textSize="14dp"
+                        android:textColor="@color/titlebg"/>
+
+                    <ImageView
+                        android:id="@+id/map_navigation_Iv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/map_navigation"/>
+                </LinearLayout>
+
+                <View
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/map_navigation_Iv"
+                    android:layout_marginTop="5dp"
+                    android:background="#B7B7B7"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="10dp"
+                              android:gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/map_navigation_Iv"
+                        android:textSize="14dp"
+                        android:text="@string/rural_tourism_name"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:id="@+id/name_Tv"
+                        android:lines="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/textView1"
+                        android:layout_toRightOf="@+id/textView1"
+                        android:textIsSelectable="true"
+                        android:text=""/>
+
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="10dp"
+                              android:gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView1"
+                        android:lines="1"
+                        android:text="@string/rural_tourism_phone"
+                        android:textSize="14dp"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:id="@+id/phone_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/textView2"
+                        android:lines="1"
+                        android:textIsSelectable="true"
+                        android:layout_toRightOf="@+id/textView2"
+                        android:text=""/>
+
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_marginTop="10dp"
+                              android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView2"
+                        android:textSize="14dp"
+                        android:text="@string/rural_tourism_location"
+                        android:textColor="@android:color/black"/>
+
+                    <TextView
+                        android:id="@+id/location_Tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/textView3"
+                        android:lines="1"
+                        android:layout_toRightOf="@+id/textView3"
+                        android:textIsSelectable="true"
+                        android:text=""/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/merchants_release"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_just_bottom_line_business_dynamics_select_bg"
+                        android:gravity="left"
+                        android:paddingLeft="20dp"
+                        android:text="@string/rural_tourism_introduce"
+                        android:textSize="14dp"
+                        android:textColor="@color/titlebg"/>
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textIsSelectable="true"
+                        android:textSize="14dp"
+                        android:background="@drawable/shape_just_bottom_line_business_dynamics_normal_bg"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:padding="10dp"
+                android:visibility="gone"/>
+
+
+            <WebView
+                android:id="@+id/wv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </WebView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

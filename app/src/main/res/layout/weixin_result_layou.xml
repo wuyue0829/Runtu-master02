@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="260dp"
+              android:layout_height="120dp"
+              android:background="@color/gary"
+              android:orientation="vertical"
+              android:padding="2dp">
+
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black_weixinresult"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="支付结果"
+        android:textColor="@color/white"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="确定"
+        android:textSize="18sp"/>
+
+</LinearLayout>
